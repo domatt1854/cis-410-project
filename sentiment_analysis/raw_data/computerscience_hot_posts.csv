@@ -1,0 +1,1147 @@
+,created_utc,title,text,author,score,upvote_ratio,num_comments,url
+0,1673829179.0,"Looking for books, videos, or other resources on specific or general topics? Ask here!",,mobotsar,93,0.99,113,https://www.reddit.com/r/computerscience/comments/10d016l/looking_for_books_videos_or_other_resources_on/
+1,1686430573.0,/r/ComputerScience will be going dark starting June 12th in protest against Reddit's API changes which will kill 3rd party apps & tools,"## Update (June 16th, 2023):
+
+This subreddit remains closed to new submissions and comments as part of the ongoing protest over Reddit policy changes. However, we've chosen to switch the subreddit to read-only, so that existing user contributions will not be censored.
+
+# What's going on?
+
+A recent Reddit policy change threatens to kill many beloved third-party mobile apps, making a great many quality-of-life features not seen in the official mobile app **permanently inaccessible** to users.
+
+On May 31, 2023, Reddit announced they were raising the price to make calls to their API from being free to a level that will kill every third party app on Reddit, from Apollo to Reddit is Fun to Narwhal to BaconReader to Sync.
+
+Even if you're not a mobile user and don't use any of those apps, this is a step toward killing other ways of customizing Reddit, such as Reddit Enhancement Suite or the use of the old.reddit.com desktop interface.
+
+This isn't only a problem on the user level: many subreddit moderators depend on tools only available outside the official app to keep their communities on-topic and spam-free.
+
+# What's the plan?
+
+On June 12th, [many subreddits](https://reddit.com/r/ModCoord/comments/1401qw5/incomplete_and_growing_list_of_participating/) will be going dark to protest this policy. Some will return after 48 hours: others will go away *permanently* unless the issue is adequately addressed, since many moderators aren't able to put in the work they do with the poor tools available through the official app. This isn't something any of us do lightly: we do what we do because *we love Reddit*, and we truly believe this change will make it impossible to keep doing what we love.
+
+The two-day blackout isn't the *goal*, and it isn't the end. Should things reach the 14th with no sign of Reddit choosing to fix what they've broken, we'll use the community and buzz we've built between then and now as a tool for further action.
+
+What can *you* do?
+
+1. **Complain.** Message the mods of r/reddit.com, who are the admins of the site: message /u/reddit: submit a [support request](https://support.reddithelp.com/hc/en-us/requests/new): comment in relevant threads on r/reddit, such as [this one](https://www.reddit.com/r/reddit/comments/12qwagm/an_update_regarding_reddits_api/), leave a negative review on their official iOS or Android app- and sign your username in support to this post.
+
+1. **Spread the word.** Rabble-rouse on related subreddits. Meme it up, make it spicy. Bitch about it to your cat. Suggest anyone you know who moderates a subreddit join us at our sister sub at r/ModCoord - but please don't pester mods you don't know by simply spamming their modmail.
+
+1. **Boycott and spread the word...to Reddit's competition!** Stay off Reddit entirely on June 12th through the 13th- instead, take to your favorite non-Reddit platform of choice and make some noise in support!
+
+1. **Don't be a jerk.** As upsetting this may be, threats, profanity and vandalism will be worse than useless in getting people on our side. Please make every effort to be as restrained, polite, reasonable and law-abiding as possible.",nuclear_splines,290,0.97,21,https://www.reddit.com/r/computerscience/comments/146av03/rcomputerscience_will_be_going_dark_starting_june/
+2,1686512465.0,How computers measure time,"Can someone explain this to me? I've been told that there is a chip that has a material that vibrates at a certain frequency when a certain current is passed through it, and when you pass a premeasured current, you just gotta measure the amount of oscillations to ""count"" time. But that's an inaccurate method, I've been told there's other methods used that are more precise, but no one is able to explain to me how those works. Please if you know this help.",RunDiscombobulated67,86,0.98,27,https://www.reddit.com/r/computerscience/comments/1473660/how_computers_measure_time/
+3,1686513814.0,Question About Registers,"Hello everyone. There is a misunderstanding I have somewhere that I would like to clear up. 
+
+I know that CPU registers are very fast and small and we can work with registers by writing assembly.
+
+Here is where my misunderstanding/what I don't get lies: when I was taking my Architecture course, we had assignments where we had to program simple programs in assembly, like, say, a simple sort or something. 
+
+If a program is running on the machine already, say I have a chat client running in the background on the machine, are the registers not in use running that program? How is it that I can write a sorting program in assembly moving values around to registers if the registers are already working with other data? Is there somehow no overlap?
+
+What am I missing here?
+
+If I want to MOV some value into some register like eax or something writing a program in assembly, how is there no other information there already such that I am overwriting or affecting other programs that are running?",mellowhorses,62,0.97,24,https://www.reddit.com/r/computerscience/comments/1473r8s/question_about_registers/
+4,1686507294.0,Learning a new skill,"Hey guys,
+
+Wanted to ask what a good computer language would be to learn for first timers. I had one c++ course in college that went over some of the basics of writing code and I liked solving problems in that way. I was hoping to develope a new skill for fun and maybe make a career change in the future.",Haunting_Document142,30,0.9,38,https://www.reddit.com/r/computerscience/comments/1470y63/learning_a_new_skill/
+5,1686501559.0,"Recommendations of Hackathons, GameJams, Tech Conferences, and similar events?","I'm interested in many fields of CS so any event that you think is interesting, I will be looking it up. Though currently, I am interested the most in 3D graphics generation, data visualization, game dev, AR/VR and AI. I also have some experience in web dev, but not as much interest(still, will also be looking them up at least once).
+
+Oh and an extra question: Which subreddit(s) would you recommend for being involved in and informed about these events?",trojaneo,32,0.89,8,https://www.reddit.com/r/computerscience/comments/146yixj/recommendations_of_hackathons_gamejams_tech/
+6,1686406797.0,Any CS books which present their subject chronologically?,"I recently read calculus reordered and Real Analysis: A radical approach by David Bressoud and I really loved the idea of presenting the ideas of a subject as they developed through history, presenting the historical background of each part of the theory.
+
+I am curious if there are any other books which are like that (books that present their material chronologically and try to explain the rationale behind each advancement in the theory, not cs history books)
+
+I would also appreciate it if you could suggest a book in adjacent fields (math, etc)",ingsocks,78,0.94,13,https://www.reddit.com/r/computerscience/comments/1461hus/any_cs_books_which_present_their_subject/
+7,1686409304.0,Best Practices using LaTeX.,"I have just finished my first seventy page thesis in LaTeX and would like to share my tips with you on your way and would also like to hear your tips for using TeX here below the post.
+
+I started TeX locally on my computer with TeXShop. Unfortunately, my computer broke down while I was working. I could only restore parts of my work through my backups. Partly I wanted to work on other computers. For me personally, Overleaf ([https://www.overleaf.com/](https://www.overleaf.com/)) has turned out to be a very good companion as an editor in the browser. Overleaf also gave very good formatting tips during the work with regard to creating tables, missing parameters using BiBTeX and much more.
+
+I used Zotero ([https://www.zotero.org/](https://www.zotero.org/)) as library management software. In particular, I quickly lost track of what was relevant to my work and where. With the browser add-on, I was able to save the sources relatively quickly and create my bibliography in BiBTeX format.
+
+Make backups of your interim work at any time. Even if Overleaf saves your results online, you should create backups that contain the entire source code. The Pro version even offers Git integration.
+
+To create notes for my work in the meantime I can strongly recommend the Todo package (to be imported with \\usepackage{todonotes}). Using the command \\todo{your note} you can then mark corresponding paragraphs at the right place.
+
+Since LaTeX sometimes places graphics elsewhere, I can also recommend the package placins. With its help you can limit the placement to certain sections. The package can be imported using (\\usepackage\[section\]{placeins}) with the parameter section for section-limiting.
+
+My thesis also has programming code in the appendix. To format it code-wise I highly recommend the package listings (to be imported using \\usepackage{listings}) 
+
+These were my biggest helpers, I hope I can be of some help to one or the other of you. If you are also currently working on a TeX project. Otherwise, I am very curious about your tips.  
+
+
+Peace out.",Sorry_Scale_1064,32,0.88,7,https://www.reddit.com/r/computerscience/comments/1462gue/best_practices_using_latex/
+8,1686430666.0,Pumping lemma Question,"I have 2 languages the first one is regular and the second one is non-regular based on what our teacher mentioned. The languages are:
+
+ 1. {w∈Σ∗|w has an equal number of occurrences of ""ab"" and ""ba"" as substrings } 
+
+2.  {w∈Σ∗|w has an equal number of occurrences of ""as"" and ""bs"" as substrings } 
+
+&#x200B;
+
+By using pumping lemma I can prove that there will be an imbalance of substring as n in y\^n increases which proves that both languages are non-regular. Can someone explain to me how my prof is correct?",Melodic-Scheme8794,9,0.92,7,https://www.reddit.com/r/computerscience/comments/146awaj/pumping_lemma_question/
+9,1686345949.0,I don't understand the Halting Problem,"The key to the solution, from what I've got so far, is imagining a machine that can detect whether or not another machine halts. We'll call that machine H, that takes as input a machine Q
+
+Then, with some simple logic, we can make a machine that halts when H detects Q doesn't halt, and that doesn't halt when it detects Q halts. That'd be Hn
+
+So, with this machine Hn, the paradox would emerge by doing Hn(Hn), since now, if it were to halt, it shouldn't halt, but if it doesn't halt, it should halt. Paradox.
+
+But, one key thing I don't get: Doesn't the internal Hn also need an input? And wouldn't all of the subsequent machines need an input as well, until we reach a static program?
+
+So instead of being Hn(Hn), shouldn't the paradox only arrive if you do Hn(Hn(Hn(...))) forever? and at that point the paradox isn't thanks to the algorithm, but rather because it's a [supertask](https://youtu.be/ffUnNaQTfZE).
+
+&#x200B;
+
+The same could be said if you build a machine that takes another machine (one that halts) as an input outputs 0 when the original outputs 1, and outputs 1 when the original outputs 0, let's call that one N
+
+N(N) should also be a paradox, no? After all, if N outputs 0, it should output 1, but if it were to output 1, it should output 0!
+
+If you don't provide an internal input for the machine you are using as input, of course you can't analyze how it's going to run.",androt14_,51,0.88,47,https://www.reddit.com/r/computerscience/comments/145hbhu/i_dont_understand_the_halting_problem/
+10,1686317231.0,How to Use a Collaborative Approach to Problem-Solving,"Hello there!
+
+This is an article I posted on the original Algorithmically Speaking blog, that also got published on [freeCodeCamp](https://www.freecodecamp.org/).
+
+Here, I share my vision on some aspects of technical interviews for programming jobs based on my own experiences when interviewing for a position at Volvo Cars and later as an interviewer myself.
+
+Hope you enjoy it!
+
+Disclaimer: all the code examples are written in Python but I don't think you will need a deep understanding of the language to get the most out of this article.
+
+Read it here: [How to Use a Collaborative Approach to Problem-Solving](https://albexl.substack.com/p/collaborative-problem-solving)
+
+Let me know your thoughts in the comments.",albeXL,7,0.77,1,https://www.reddit.com/r/computerscience/comments/14559fs/how_to_use_a_collaborative_approach_to/
+11,1686235623.0,Good papers for high school students?,"This summer I am hosting an internship for 5 high school students (recent graduates through rising juniors) who have taken up to Computer Science AP, and may have taken cybersecurity, participated in extracurricular events, and so on.
+
+I'm already planning on introducing them to the material from MIT's ""The Missing Semester of Your Computer Science Education"".
+
+I'm looking for suggestions on good 'toe dipping' computer science papers in order to expose them to the idea that ""this stuff is approachable if you work at it"" early, and I'm looking for recommendations.
+
+I've been considering stuff from Knuth's books like ""Selected Papers on Fun and Games"". Any specific suggestions from this audience?",bokmann,58,0.91,12,https://www.reddit.com/r/computerscience/comments/144b92r/good_papers_for_high_school_students/
+12,1686252125.0,Practical computation with non-Vonn Neumann machines?,"Right now we do nearly 100% of our computation with Vonn Neumann machines. Occasionally we use them to emulate other forms of computation like neural networks.
+
+I'm really interested in unconventional forms of computation. It looks like there's an infinite zoo of computational complexity out there - broad categories like cellular automata, neural networks, register machines, etc with endless variations within. 
+
+But the tricky part is doing *practical* computation. Most of these systems are highly chaotic and impossible to program by hand. Neural networks are widely ""programmed"" through optimization, and this can be [extended somewhat](https://distill.pub/2020/selforg/mnist/) to cellular automata. 
+
+Are there any examples of techniques to program other nonstandard computational systems? Bonus points if they're physical hardware instead of emulations.",currentscurrents,3,0.67,10,https://www.reddit.com/r/computerscience/comments/144ie3u/practical_computation_with_nonvonn_neumann/
+13,1686202238.0,Theoretical Computational Model Stronger than turing machine,"Suppose two things: Time is infinite in the future, we can make a time machine.
+Now imagine a machine that takes any question as input and runs on it just like a turing machine. If the turing machine halts in any point in the future it has the ability to go back in time to a exactly a second after you pushed the calculate button.
+If you see a machine that came back in time after a second then the program halts. If you don't see a machine then it doesn't halt.
+
+What do you think?",roughman99,26,0.83,13,https://www.reddit.com/r/computerscience/comments/1440dq1/theoretical_computational_model_stronger_than/
+14,1686220059.0,Developer communities London UK,"Hello!
+
+TLDR:
+Does anyone in this community have any recommendations for groups or communities that meet in-person in london to work on projects together, learn together and network?
+
+Background:
+I’ve recently made the decision to try to pivot my career from a somewhat related role towards becoming a software dev. I’m doing a lot of personal learning to plug any knowledge/ coding gaps and I’m creating a portfolio of projects for interviews etc. However, one thing I feel I’m missing is the opportunity to work with other like minded individuals, learn together, network, meet potential employers, understand what it is that I don’t know etc. - and so I’m looking to find a community that meets in person fairly regularly and is set up to help with the above. 
+
+Thanks in advance for any recommendations!",TheWopper,5,0.86,1,https://www.reddit.com/r/computerscience/comments/1445hf0/developer_communities_london_uk/
+15,1686229451.0,"Judy Array, are they still a viable choice?","So I've been reading the [memcached](https://github.com/memcached/memcached/tree/32f382b605b4565bddfae5c9d082af3bfd30cf02) initial commit and notice their in memory storage is a Judy array. I can't really find a lot of info on this data structure besides the developers blog posts from almost 20 years ago. Wikipedia says it's needlessly complicated? Seems like skiplists and other bsp trees have similar use cases as well.
+
+Is there any reason why I haven't seen this data structure more in modern code? Maybe I'm just ignorant?
+
+If anybody is an old school open source dev I'd love to know what the Judy array was succeeded by.",sleazyrom,2,0.75,3,https://www.reddit.com/r/computerscience/comments/1448r06/judy_array_are_they_still_a_viable_choice/
+16,1686169341.0,Ar/Vr development,"Hey! I was trying to get into Ar/Vr Development (Software). Could someone share some resources as to how can I get into this field. Tutorials, tips anything works",kratosnaamhaimera,9,0.76,9,https://www.reddit.com/r/computerscience/comments/143nu6y/arvr_development/
+17,1686140699.0,What's the difference between Model Formulation and methodology in a computer science paper,"Struggling to find the difference, feels like methodology isn't really applicable to the field of CS. Am I wrong?",Jobdriaan,21,0.84,8,https://www.reddit.com/r/computerscience/comments/143bthq/whats_the_difference_between_model_formulation/
+18,1686179746.0,"If we describe the size of combinatorics problem as 10^N, where is the solvability boundary in the case of CPU / GPU / Quantum Computing? (say, we have 1month)","In 2015, I saw Google's quantum computing is 100M times faster than previous GPU super computer. Maybe it is hard to say ""solvability boundary"" without defining the problem solving period clearly.",Dry-Beyond-1144,0,0.4,2,https://www.reddit.com/r/computerscience/comments/143sb9j/if_we_describe_the_size_of_combinatorics_problem/
+19,1686144486.0,What is the best reference or dictionary sites with definitions in computer science,What is the best reference or dictionary sites with definitions in computer science like wikipedia or FOLDOC,Defiant_Security_971,4,0.75,5,https://www.reddit.com/r/computerscience/comments/143dbgi/what_is_the_best_reference_or_dictionary_sites/
+20,1686062822.0,"Does anyone want/need my copy of ""Discrete Structures, Logic, and Computability"" by James L Hein?","Hello, former CS student here who is going through a decluttering process. 
+
+Are you interested in this book? Maybe you're a professor who uses it and can give it away to a student in need. Maybe you're a student who needs it. 
+
+Whoever you are, please take this book off my hands! All I ask is that you please cover the shipping costs. If you're interested, DM me your zipcode and I can let you know the cost. 
+
+:)",ejtnjin,109,0.97,11,https://www.reddit.com/gallery/142idt9
+21,1686137601.0,Data Retrain in SAS Viya,"Hi, everyone. i am new to this area and have a question over data retraining.
+
+ When I am trying to use SAS Viya to manage new models (such as credit scoring), I am confused about what are the ways to select retraining datasets. For example, when evaluating the performances on the tested dataset (Q1,Q2,Q3,Q4,Q5) by looking at the ROC graph Q2 and Q5 are doing the best, and there are certain variables showing great differences across the quarters which requires retraining our model on other data. I wonder how do we choose the data we should use to retrain then? What are the standards or ways to select the data we use? It will be great If anyone can help me with this question, thank you!    ( this is the link for the tutorial I am looking at, [https://www.youtube.com/watch?v=IGW77r-KQDc](https://www.youtube.com/watch?v=IGW77r-KQDc) , in their example, we will using the most recent data Q5’s data to retrain as the model is degrading over time, but if the the degrading is not following a timely order? )",aebsnyt,0,0.5,1,https://www.reddit.com/r/computerscience/comments/143apzd/data_retrain_in_sas_viya/
+22,1686146010.0,What kind of text-file format is the best for specifying trees.,"Hello.
+
+I'm playing with the thought of writing a program  for rendering trees.
+
+In the first instances, they are just rendered in the command line window as a regular tree.
+
+I want to just make a text file to be parsed as a tree, with the bare minimum of fuzz, so it is as easy as possible to define a tree, but with as little amount of ambiguity as possible. And it should be easy to edit the definition, add delete
+nodes and so on.
+
+I have thought of using markdown headings for speciffying levels, but thinks that even that is a little too much.
+
+As I see it I have two alternatives that are viable:
+
+* tab indentation 
+
+    root
+        level1
+             level 2
+        level1
+             level 2
+                 And so on
+
+* markdown headers, much like the first one.
+
+I think, having to make the user write it as a tree is implemented in an array is too much.
+
+I wonder if I am overlooking some other options for defining a tree by a text file, which is just as easy. (I have considered numbering, but thinks renumbering will be too big a chore.)
+
+**Edit**
+
+I want a file format as simple as possible for being able to parse a text file as an inorder binary tree, with as little markup as humanly possible, and yet leave as little room as possible for ambiguities.
+
+The motivation behind this, is to lower the threshold for drawing a graph down to nothing. The end goal, is to output pic scripts you can edit further, and then have pic render the diagrams as svg or whatever format available.
+ 
+So, thank you for any suggestions!",McUsrII,0,0.38,11,https://www.reddit.com/r/computerscience/comments/143dwyv/what_kind_of_textfile_format_is_the_best_for/
+23,1686155021.0,Can Blockchain replace Cloud,"Hey,
+I am a student of CS and have really been pondering about the newer techs emerging, I have been very interested in cloud and am also pursuing Architect cert from Azure, but all the hype around has been a concern that if blockchain will replace cloud. I am new to all this as I told I just am a student rn, I am eager to know if this scenario could ever happen bcoz rn I have time to switch over to blockchain(I like CS as whole not just cloud). I am really looking for some guidance. So, just wanted to know yall folks opinions.
+Thank You!!",MridulSharma11,0,0.15,27,https://www.reddit.com/r/computerscience/comments/143hqad/can_blockchain_replace_cloud/
+24,1686036579.0,how do computers or any digital device actually work?,"like I understand, logical gates are setup to perform corresponding opetations and i/p and o/p is given as voltage (high/low). so how does, these logical operations make a word doc, web browsing work?",Substantial_Novel_59,11,0.68,14,https://www.reddit.com/r/computerscience/comments/1427lfh/how_do_computers_or_any_digital_device_actually/
+25,1686089966.0,What does the market for file compression look like these days ?,"I don’t know if this is the right sub, but I was wondering if the market for compression is booming right now. I’m phrasing it poorly but how much do you think a new and improved file compression system might be worth ?",jodywa05,0,0.38,8,https://www.reddit.com/r/computerscience/comments/142v6d6/what_does_the_market_for_file_compression_look/
+26,1686016745.0,Introduction to Quantum Computing with IBM Quantum,"I found this program today. Quantum computing can potentially change our world, applications include revolutionizing cybersecurity. This appears to be a virtual program and you can apply  for scholarships. Otherwise it could cost up to $1.2K for both semesters. 
+
+I signed up, looking forward to not only learning a useful skill but network with potetentially future millionaires. 
+
+https://www.qubitbyqubit.org/course-info",LittleYogurtcloset68,16,0.86,4,https://www.reddit.com/r/computerscience/comments/141zwfu/introduction_to_quantum_computing_with_ibm_quantum/
+27,1686008843.0,What book should I read first on computer science?,I need to find something basic and understanding.,RelativeMediocre3120,7,0.71,7,https://www.reddit.com/r/computerscience/comments/141whhs/what_book_should_i_read_first_on_computer_science/
+28,1686074969.0,Artificial Image Research - be part of something big!,"Hi r/computerscience,
+
+I'm writing a research paper on  creating artificial images and I need your help!
+
+&#x200B;
+
+I'm researching the effectiveness of **Human Eye Perceptual Evaluation (HYPE)** which is basically using human vision as a metric of evaluating how good a piece of AI generated art really is.
+
+&#x200B;
+
+**In particular, I need the help of redditors in answering this form to bump up the sample size before I can get permission to conduct official research:** [https://forms.office.com/e/YhBxsA6Lej](https://forms.office.com/e/YhBxsA6Lej)
+
+&#x200B;
+
+There are multiple questions but they are quick fire multiple choice (i.e. real or fake) so thank you for your time!",FeZzUs,0,0.17,0,https://www.reddit.com/r/computerscience/comments/142oels/artificial_image_research_be_part_of_something_big/
+29,1685968481.0,"Cycle detection in graphs does not have to be hard: A lesser known, simple way with Kahn’s algorithm",,broken_broken_,24,0.93,1,https://gaultier.github.io/blog/kahns_algorithm.html
+30,1685999035.0,Interview with Andrew Ng and Chelsea Finn: AI & Robotics,,Stanford_Online,6,0.87,0,/user/Stanford_Online/comments/141rknt/interview_with_andrew_ng_and_chelsea_finn_ai/
+31,1685967533.0,Edit Distance and Longest Common Subsequence," Could you explain why the longest common subsequence (LCS) problem is a special case of the edit distance problem? I read that in the solution to LCS I should avoid substitutions. I don't understand why that is the case.  
+Thank You.",chirathpansilu,5,0.86,2,https://www.reddit.com/r/computerscience/comments/141cqkk/edit_distance_and_longest_common_subsequence/
+32,1685984429.0,Calculus,I am struggling with calculus and was wondering how much will we be using calculus in Computer Science.,BennieMiller,1,0.54,14,https://www.reddit.com/r/computerscience/comments/141ky9c/calculus/
+33,1685907575.0,Best computer science and related youtubers,"Hello! How's everyone?
+
+I would like to ask, in your opinion, which are the best computer science related youtubers and why you like their videos.
+
+Thanks for sharing!",,87,0.97,38,https://www.reddit.com/r/computerscience/comments/140nu1w/best_computer_science_and_related_youtubers/
+34,1685983617.0,The unique promise of ‘biological computers’ made from living things,,veterinarysite,1,0.57,0,https://www.scihb.com/2023/06/the-unique-promise-of-biological.html
+35,1685899850.0,Full SQL Manual on GitHub,"I Created a **full manual for SQL** in GitHub [FSM](https://github.com/AmmarAbdelhalem/FSM) as repo, And the topics is:
+
+* Introduction to databases and SQL
+* Data Types and Data Definition
+* Creating and modifying database objects
+* Data manipulation
+* Aggregate functions
+* Subqueries and joins
+* Transactions and concurrency
+* Stored procedures and triggers
+* Advanced topics
+
+**If you find these useful support me with star and share it with your friends**",Ammar-Abdelhalem,47,0.89,3,https://www.reddit.com/r/computerscience/comments/140jzgf/full_sql_manual_on_github/
+36,1685806624.0,Pneumatic computer uses pressure instead of electricity,,veterinarysite,49,0.96,2,https://www.scihb.com/2023/06/pneumatic-computer-uses-pressure.html
+37,1685868002.0,"How, if at all, do the digits in hex color codes interact with various qualities of their corresponding color?","Please redirect me if this is the wrong place to ask this. If I have a hex color code but want to modify the hue/value/chroma, is there a way I can predictably do this by modifying the hex code directly? I have a CS degree but this was never covered beyond ""each color has a hex code,"" at least not that I can recall.",animaldander,3,0.71,12,https://www.reddit.com/r/computerscience/comments/1406hvs/how_if_at_all_do_the_digits_in_hex_color_codes/
+38,1685761606.0,"You've been warned. Stop sharing your life and personal information, emails, documents, with Chat GPT and chat GPT plugins. Wait for encryption.",,the_anonymizer,134,0.81,24,https://theconversation.com/chatgpt-is-a-data-privacy-nightmare-if-youve-ever-posted-online-you-ought-to-be-concerned-199283
+39,1685869866.0,How to create your own and decryption in CBC mode?,,HeadClicker52,0,0.33,3,https://www.reddit.com/r/computerscience/comments/140769h/how_to_create_your_own_and_decryption_in_cbc_mode/
+40,1685808524.0,Millions of PC Motherboards Were Sold With a Firmware Backdoor,,Akkeri,11,0.87,0,https://www.wired.com/story/gigabyte-motherboard-firmware-backdoor/
+41,1685782863.0,Exploring how to model board games as graph problems.,"**This is a summary version of the weekly edition of the Algorithmically Speaking newsletter. Subscribe to the** [newsletter](https://albexl.substack.com/) **and get these articles straight into your inbox.**
+
+\-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello there!
+
+After three weeks of learning the basics of graphs, I think it is time to show you examples of how we can translate real-life problems to the graph theory domain
+
+This will be the last of a series of posts introducing the basic concepts of graph theory before we dive into topics such as traversals, and finding cycles, among others.
+
+Here’s a summary of what we have covered in the previous editions:
+
+1. Introduction to the concepts of [nodes, edges, and connectivity](https://albexl.substack.com/p/introduction-to-graph-theory).
+2. Defining what are [neighbors, degrees, and colorings](https://albexl.substack.com/p/an-introduction-to-graphs-ii) in graphs.
+3. How to [represent graphs](https://albexl.substack.com/p/graphs-representation) in a computer program.
+
+Today, we will learn about practical examples of how to use graphs in real life. For that, we are going to see examples of “games” that are played on boards. They might seem unrelated to graphs, but the truth is that they are more closely related than you might think.
+
+At the end of the post, you will find some algorithmic challenges so you can try and apply some of the topics that I will explain today. Feel free to skip to that part if you think you already have the necessary skills to solve them.
+
+Let’s begin!
+
+## An Initial Problem
+
+Let’s dive in straight to the matter. Take a look at the following problem and think about how you would approach it:
+
+https://preview.redd.it/krf1rmu0nr3b1.png?width=1304&format=png&auto=webp&s=c6890cc02f7ecafa3327f392163608c2660c39d1
+
+By simple inspection, we can notice that there are three “sets“ of floor tiles that can be identified as “rooms“. These are all the rooms highlighted and numbered: 
+
+https://preview.redd.it/skr7qk73nr3b1.png?width=649&format=png&auto=webp&s=974ae5fafd8e618a05834c62ccb1dc555baf635d
+
+Intuitively, we identify these “connected“ regions and we sort them out as “rooms” because it just makes sense in our heads.
+
+But what if this was the input to a program? How could we design an algorithm that a computer will execute to find the number of “rooms” in any map of a house that uses this representation?
+
+Well, unfortunately, before thinking about designing algorithms we have to think about modeling this problem in terms that a computer can understand. And one possibility, as you might have suspected already, is doing so by using graphs.
+
+## Representing Boards as Graphs
+
+Let’s talk about a classical way of representing boards using graphs. Take a look at the following problem and try to think of a solution.
+
+This time go a bit further and try to think of a general solution, instead of just solving this particular instance. It’s ok if you can’t, I will show you how to do it soon.
+
+https://preview.redd.it/f04jvvg6nr3b1.png?width=1304&format=png&auto=webp&s=f4eb98877382658edbc5f182e3f522126ce6c5c3
+
+Once again, our brains might identify that there are only two paths between the highlighted squares, and we can easily spot which one is the shortest: 
+
+https://preview.redd.it/j8b1n009nr3b1.png?width=1555&format=png&auto=webp&s=2b62fe71c2b3091ed3735d24b3d9cbf575d29002
+
+The path shown on the left takes 9 steps while the one on the right takes 11 steps.
+
+But, who defined what a path is in this problem? Who defined which tiles we can move to when standing on a specific tile?
+
+Our brains (or at least mine) intuitively assumed that the possible moves from a given position were the following:
+
+https://preview.redd.it/v7qf7k0bnr3b1.png?width=256&format=png&auto=webp&s=204d5817b885b926f020b7479fdc84fef4cc64e5
+
+So, as long as we are not trying to go to a “wall” tile, we can move to the left, right, up, or down.
+
+Let’s take this set of movements and the “floor“ tiles and see how they relate to graphs. Assuming that the start and end tiles are also floor tiles, we can number every floor tile arbitrarily like this:
+
+https://preview.redd.it/jwkf1lohnr3b1.png?width=649&format=png&auto=webp&s=c1e17e2971c1c99f9a658111f0a9646be0a27ade
+
+We have 14 “floor” tiles, which can be represented as 14 nodes of a graph. So, what about the edges?
+
+Let’s add an edge between two pairs of nodes if it exists a valid movement between their corresponding tiles on the map. For example, we can add edges between nodes 1 and 2, and also between nodes 13 and 14.
+
+That being said, our problem can be reduced to finding the path with the minimum length between two nodes in an undirected graph.
+
+This is the graph that results from taking every floor tile as a node and adding edges according to the valid moves that we defined:
+
+https://preview.redd.it/u94iiezjnr3b1.png?width=2195&format=png&auto=webp&s=33388b27b52c9b19d444a51fd51b264f9248d7fa
+
+The problem of finding a path with the minimum length between two nodes is a standard problem in the graph theory domain, and we will learn how to solve it in future posts of this series.
+
+For the moment, let’s go back to our initial problem and try to model it using graphs applying what we learned from this example.
+
+## Counting the Rooms
+
+Let’s recall the problem we saw at the beginning of this post:
+
+https://preview.redd.it/q63774ymnr3b1.png?width=1304&format=png&auto=webp&s=924e910b5767e9b60a7746efb2a798491bb6c585
+
+Let’s number every floor tile, and assume that we have the same possible moves that we described above. That is, from a given tile we can move to the tiles at its right, left, top, and bottom as long as they are not “wall“ tiles.
+
+A possible numbering could be the following:
+
+https://preview.redd.it/bgtr6e0pnr3b1.png?width=649&format=png&auto=webp&s=3d451e28cf81d8ec82a07fcf60ea7ac9bd4fcfda
+
+ Translating this map to a graph the same way we did before, we get the following: 
+
+https://preview.redd.it/bz9ymsjqnr3b1.png?width=806&format=png&auto=webp&s=0311f27afc7d52f5a7f3cfde5c5a36d250c30b2c
+
+And if we were to solve the problem of counting the number of rooms in a graph, we could rephrase that as counting the number of its [connected components](https://albexl.substack.com/p/introduction-to-graph-theory).
+
+See all the “rooms“ taken to the domain of connected components below:
+
+https://preview.redd.it/2xc3ctrtnr3b1.png?width=1742&format=png&auto=webp&s=305209b6f203bc9cf9921b2e15698aa1e05c736c
+
+As you also might suspect, the problem of finding the connected components in an undirected graph is also a standard problem that can be solved by using various graph algorithms.
+
+We will be covering those algorithms and more in future editions of Algorithmically Speaking.
+
+In the meantime, it’s time to try what you’ve learned!
+
+## Test Your Skills
+
+I have seen a variety of challenges and puzzles on boards that I would like to share some of them with you today.
+
+I would suggest that you try to focus first on solving them by any means possible and then try to think about how to model this problem using a bit of graph theory.
+
+As I [promised before](https://albexl.substack.com/p/one-month-of-algorithmic-posts), no more plain-text statements. Here we go:
+
+**Problem #1:**
+
+https://preview.redd.it/xgj16v8znr3b1.png?width=1533&format=png&auto=webp&s=0e2c4b2ada71956c934bff787cdc79f71f0f93a3
+
+ **Problem #2:**
+
+https://preview.redd.it/za6no143or3b1.png?width=1304&format=png&auto=webp&s=ed8e954472dbe4201880e15f851e254ded26fc87
+
+## Conclusions
+
+I hope I was able to keep igniting your passion for graph theory by showing you some basic guidelines on how to model board problems using graphs.
+
+This approach is used in numerous real-life applications (at the top of my mind I can think of numerous examples related to the gaming industry).
+
+Also, I recently stumbled upon this [video](https://www.youtube.com/watch?v=ZMQbHMgK2rw&t=795s) where I found out about a competition that has been going on for more than 50 years and has a lot to do with boards, mazes, and of course, graphs.
+
+Some takeaways:
+
+* Board problems can usually be modeled as graphs by taking some set of tiles as the nodes and the possible moves between the tiles as the edges.
+* Usually, board games involve tasks such as counting regions, or finding paths which are usually standard problems of the graph theory domain.
+* The chessboard is a [bipartite graph](https://albexl.substack.com/p/an-introduction-to-graphs-ii). Do you see it now?
+
+I wish you good luck when solving this week’s challenges. Don’t forget to share your progress with the community!
+
+If you think this post can be helpful for someone, share it with them. Nothing will make me happier!
+
+See you next week!",albeXL,35,1.0,0,https://www.reddit.com/r/computerscience/comments/13z6n1u/exploring_how_to_model_board_games_as_graph/
+42,1685863546.0,What's best way to store scientific text to support CRUD.,I am trying to store text that can scientific notations and mathematical symbols. Wanted to discuss what's best way to store it so that it can be retrieved and rendered in webpage and can be edited also if needed. Currently thinking MarkDown + Latex for math symbols.,oldSeaBird,0,0.29,1,https://www.reddit.com/r/computerscience/comments/1404x71/whats_best_way_to_store_scientific_text_to/
+43,1685810018.0,Theoretical Approaches to crack large files encrypted with AES,"I have a large file (> 200 Gb), that I encrypted a while ago with AES-256-CBC. The file itself is a tar which I ran through openssl. I've forgotten the exact password, but have a general idea of what it is.
+
+Brute force is the easiest way to crack this from what I've seen (given the circumstances that I have a general theory of what the passwords might be), but the hitch I've run into is the time its taking me to actually try each combination. I have a script running on a server, which seems to be taking it ~ 15 minutes before spitting out that its wrong.
+
+I can't help but think there has to be a better way to solve this.",HeadClicker52,5,0.78,5,https://www.reddit.com/r/computerscience/comments/13zhzsf/theoretical_approaches_to_crack_large_files/
+44,1685808682.0,[Article] Average Case Lower Bounds For Comparision-Based Sorting Algorithms,,luciferreeves,0,0.5,1,https://thatcomputerscientist.com/weblog/sorting-averagecase-lower-bounds
+45,1685709636.0,Algorithmically Speaking - #6: Graphs and Boards,"Hello there!
+
+After three weeks of learning the basics of graphs, I think it is time to show you examples of how we can translate real-life problems to the graph theory domain 
+
+This will be the last of a series of posts introducing the basic concepts of graph theory before we dive into topics such as traversals, and finding cycles, among others.
+
+Today, we will learn about practical examples of how to use graphs in real life. For that, we are going to see examples of “games” that are played on boards. They might seem unrelated to graphs, but the truth is that they are more closely related than you might think.
+
+Read the full article here: [Algorithmically Speaking - #6: Graphs and Boards](https://albexl.substack.com/p/graphs-and-boards)
+
+Don't forget to share your thoughts on the comments below. Have a wonderful day!",albeXL,24,1.0,0,https://www.reddit.com/r/computerscience/comments/13ybn07/algorithmically_speaking_6_graphs_and_boards/
+46,1685735341.0,What kind of data structure to efficiently cache a time series?,"The issue I'm having with a hash table is that if you cache the series from June to July and then request June to August, the hash of the date intervals are different and so you incur a cache miss on the second operation. So you end up fetching the data from June to July twice since the second interval is a subset of the first.",plutoniator,0,0.5,1,https://www.reddit.com/r/computerscience/comments/13ymxqw/what_kind_of_data_structure_to_efficiently_cache/
+47,1685564787.0,I created an Advanced AI Basketball Referee,,_ayushp_,691,0.97,25,https://v.redd.it/hf1u06x8p93b1
+48,1685694795.0,Why binary digits are grouped in 4 bits?,"Edit:- one more question 
+Were the binary numbers represented in grouping of 4 bits from the starting or we are grouping them in 4 only after the introduction of hexadecimal( to make conversion between them more easy)",Spirited-Escape7923,0,0.42,6,https://www.reddit.com/r/computerscience/comments/13y6zfx/why_binary_digits_are_grouped_in_4_bits/
+49,1685658855.0,The proof that O(2^n) < O(n²) doesn't quite makes sense to me,"Plotting the two functions clearly show the growth difference between the two, but I wanted to prove that O(n²) < O(2\^n) mathematically.
+
+I've found [this explanation](https://stackoverflow.com/a/34688328) on SO, and by doing the L'Hopitals rule with both functions, I obtain: 
+
+https://preview.redd.it/p6yfmchugh3b1.png?width=85&format=png&auto=webp&s=e30a2aeeefd3ee78d3ad01c36789ecb6c97451a0
+
+It may be because I'm a little bit rusty on my calc, but what does this actually mean? Why is this the proof that O(n²) < O(2\^n)?",theBadRoboT84,2,0.56,7,https://www.reddit.com/r/computerscience/comments/13xvjgp/the_proof_that_o2n_on²_doesnt_quite_makes_sense/
+50,1685640992.0,A Manifesto for Cloud-Oriented Programming from the creator of the CDK,"In this [insightful article](https://docs.winglang.io/blog/2022/11/23/manifesto), Elad Ben-Israel, the mind behind the CDK, shares his love for the cloud, but also his frustrations with the complexity of building cloud applications. The challenges he identifies include:
+1. Focus on non-functional mechanics: The need to understand and manage cloud platform mechanics instead of focusing on building valuable features for users.
+2. Lack of independence: Developers often need to rely on others to handle parts of the deployment process or to resolve issues, interrupting their work flow.
+3. Delayed feedback: The current iteration cycle in cloud development can take minutes or even longer, significantly slowing down the development process and making it harder for developers to stay in their flow state.
+
+## It's not just a rant
+Elad is not just ranting about cloud development. He proposes a solution in the form of a programming language for the cloud. This language would treat the entire cloud as its computer. The language compiler will be able to see the complete cloud application, unbound by the limits of individual machines. Such a compiler would be able to handle a significant portion of the application's non-functional aspects, enabling developers to operate at a more abstract level, thus reducing complexity and promoting autonomy. Moreover, it could expedite iteration cycles by allowing to compile applications to quick local simulators during the development process. 
+
+## The Winglang Project
+Elad reveals that he's in the process of developing such an open-source, “cloud-oriented” language, dubbed [Winglang](https://github.com/winglang/wing). Wing aims to improve the developer experience of cloud applications by enabling developers to build distributed systems that leverage cloud services as first-class citizens. This is achieved by integrating infrastructure and application code in a secure, unified programming model. Wing programs can be executed locally via a fully-functional simulator or deployed to any cloud provider.
+
+## My Interest in Winglang
+I, together with a group of dedicated contributors, joined forces with Elad to develop Winglang.
+While still in Alpha and not yet ready for production use, it's already possible to build some [real applications](https://github.com/winglang/research/tree/main/dogfooding).
+
+Check out https://github.com/winglang/wing for more details.",shai-ber,0,0.33,0,https://www.reddit.com/r/computerscience/comments/13xny90/a_manifesto_for_cloudoriented_programming_from/
+51,1685618802.0,Resources on parallel programming,"I would like to learn how to design parallel algorithms in depth. I've taken a course covering OpenMP and MPI, but I would like to know more.
+
+Especially I'm interested in designing some common parallel - eg. sorting algorithms such as quicksort and mergesort, etc.
+
+I've looked at the GNU implementations of these algorithms and would like to know if there are any resources explaining those?
+
+I don't really mind the format of these resources - books, articles, papers, videos, idc.",TuruMan,0,0.14,0,https://www.reddit.com/r/computerscience/comments/13xf0t0/resources_on_parallel_programming/
+52,1685604245.0,what can I study in 20 days?,"My exams are in 3 weeks. So I have 20 days at my disposal.
+
+What I have already learnt:
+
+1. Python language
+2. Data Structures and algorithms (125 questions so far)
+3. Nand2tetris part 1
+
+What I think I can't learn due to limited time:
+
+1. Nand2tetris part 2
+2. OS
+3. Networking
+4. Dynamic programming
+
+Is there anything I *can* learn in limited time that is valuable af?",AwaysGays,0,0.33,3,https://www.reddit.com/r/computerscience/comments/13xazu2/what_can_i_study_in_20_days/
+53,1685502120.0,What are some good networks to test nmap on?,Are there common ones people use for testing?  Or does anyone know any specific ip’s that will return some good data to get a feel for how nmap performs?,PoliteRuleFollower,26,0.96,3,https://www.reddit.com/r/computerscience/comments/13wagac/what_are_some_good_networks_to_test_nmap_on/
+54,1685557044.0,Need help (newbie) - Church-encoded Booleans,"Hi everyone,
+
+I don't know where to ask, so I come to this place. I know that we're not to ask questions regarding programming issues in this subreddit, but I didn't find any programming subreddit (including lisp, scheme and the like) that felt appropriate because I'm stuck at the theoretical, mathematical, logical level.
+
+I'm taking CS classes at Uni, but it's a non-standard ""lateral"" track, so we're to study a lot of stuff on our own. I'm currently trying to get a grasp on the lambda calculus because I feel it is helpful for functional programming.
+
+I'm at a loss when it comes to understanding Church booleans.
+
+(I know ""normal"" booleans from programming languages like Java, were you set x (or boolean x) = true or ask whether x == 5 or 4 == 7 which might evualuate to true or false).
+
+So, my ""hang-up"":
+
+Church convention:
+
+true ≡ λa.λb. a
+
+false ≡ λa.λb. b
+
+If you use beta reduction, true gives you back whatever you use and discards λb.
+
+λa.λb. a (5)
+
+\----> 5
+
+but
+
+λa.λb. b (5)
+
+\----> 5
+
+...that is the same and \_almost\_ like the identity function. This, I don't understand.
+
+But my bigger problem, which, of course, probably arises from not properly understanding Church booleans in the first place, is if-then.
+
+if ≡ λp.λa.λb. p a b
+
+How do I go from here to ""choosing λa if true and λb if false""?
+
+My first try was obviously BS because I used the bound variables of λa and λb for λp, which was not so smart.
+
+\[This was my try for ""True"":
+
+    λp.λa.λb. p a b                      (TRUE) a b
+    λp.λa.λb. p a b                      (λa.λb. a) a b
+    λa.λb. ( (λa.λb. a) a b)              a b
+    λa.λb.  ((λb. a)  b)                  a b
+
+eeerm...what?....oops.
+
+... yeah, didn't make sense. I don't think I can use a and b when it comes to p because they are already lambda-bound?)
+
+&#x200B;
+
+How does p --> TRUE ""trigger"" an output of λa and p --> FALSE λb?
+
+&#x200B;
+
+Thank you so much in advance!
+
+&#x200B;
+
+&#x200B;
+
+edit because of typos",chocolatesuperfood,1,1.0,8,https://www.reddit.com/r/computerscience/comments/13wtpy9/need_help_newbie_churchencoded_booleans/
+55,1685556017.0,Are there any deep-dives anywhere into CPU Architecture?,"Here's an image I just stumbled across while reading about DOOM.  It shows the architecture and separate areas of transistors that do certain functions.  What I'm looking for is more info on how the transistors are layed out, what each transistor is doing, and how each section is used.  I understand that they are logic-gates, but I don't understand why there are so many of them and how they're used in code.
+
+https://preview.redd.it/tpy39vcsy83b1.png?width=654&format=png&auto=webp&s=bc6b4fe419f13289da6a681a6a83046c9746c7fc",,0,0.5,6,https://www.reddit.com/r/computerscience/comments/13wtafp/are_there_any_deepdives_anywhere_into_cpu/
+56,1685582654.0,why is refresh rate measured in hertz,"let me know if this is the right sub for this question or not. i'm just curious, and google won't really give me a straight answer. hertz measures things that oscillate right? don't lcd monitors just display the whole frame at once? is it a holdover from old cathode ray monitors that drew from top to bottom?",fabulog,0,0.33,2,https://www.reddit.com/r/computerscience/comments/13x4et3/why_is_refresh_rate_measured_in_hertz/
+57,1685462302.0,🧠 Cognitive Load Developer's Handbook,,RobinCrusoe25,31,0.94,0,https://github.com/zakirullin/cognitive-load
+58,1685402078.0,A Introduction to Concurrent B+ Trees,https://medium.com/@mkrebser/concurrent-b-trees-concurrentsorteddictionary-c-net-f7c1c2a84141,monte_carino,14,0.95,1,https://www.reddit.com/r/computerscience/comments/13v9nz0/a_introduction_to_concurrent_b_trees/
+59,1685381895.0,Interesting CS research paper recommendation.," I love reading CS research papers and would love to get a recommendation from you guys. It could be from any field of CS, but please don't recommend any that is too old and not relevant anymore.
+
+Thanks",mrcarrot213,25,0.84,4,https://www.reddit.com/r/computerscience/comments/13v1bes/interesting_cs_research_paper_recommendation/
+60,1685396763.0,Labyrinth puzzles modeled as graph theory problems,"This Friday I plan to share a post explaining how to model games or puzzles on rectangular boards using graph theory.
+
+To prepare my audience for that, I created this problem set to give you a hint of the topics that will be covered in the post:
+
+[Puzzles - #1: Labyrinths](https://albexl.substack.com/p/puzzles-1-labyrinths)
+
+Try them out and let me know how it goes. Stay tuned for the article on Friday published on [Algorithmically Speaking](https://albexl.substack.com/).
+
+Have a wonderful day!",albeXL,10,0.86,4,https://www.reddit.com/r/computerscience/comments/13v7kbg/labyrinth_puzzles_modeled_as_graph_theory_problems/
+61,1685400886.0,"If I make code open source, can I require people to give me credit?",As the title says^^^. I tried looking it up but couldn’t find a straight forward answer. Some said I could and others said then it wouldn’t be truly open source.,ZACHSTOFKO,5,0.63,12,https://www.reddit.com/r/computerscience/comments/13v97r0/if_i_make_code_open_source_can_i_require_people/
+62,1685349445.0,Question about finding a subgraph.,"Hi. I have a question of a graph theory to find a subgraph. It came from my experience to distribute flyers to houses in some cities. It targets kids, and I needed to decide which cities to distribute flyers. Some cities have more kids, but others don't. To rephrase,
+
+&#x200B;
+
+You have a map of cities. You need to distribute flyers of your new business that target kids. You need to maximize the kids you reach to via flyers.
+
+subject to
+
+\- cities you distribute need to be a connected graph
+
+\- you know how many kids and people live in each city
+
+\- you have N flyers.
+
+Does anyone know a similar well known problem?
+
+Edited: You need to distribute more than N flyers. -> You have N flyers.  
+Edited: I found this is a knapsack problem. ",nwatab,5,0.73,13,https://www.reddit.com/r/computerscience/comments/13up3d1/question_about_finding_a_subgraph/
+63,1685290402.0,Parallel numerical analysis algorithms via threads or MPI,"Hi all,
+
+Can anyone recommend a good reference for parallel algorithms via threaded or MPI programming?  I am looking at numerical analysis courses and want to learn parallelizing the algorithms.  I am pretty confident I can handle the mathematics of it, but parallelization of the methods I am not so sure of. 
+
+See [https://www.reddit.com/r/math/comments/13txqxq/parallel\_programming\_in\_numerical\_analysis/](https://www.reddit.com/r/math/comments/13txqxq/parallel_programming_in_numerical_analysis/)
+
+For an idea of what I am talking about.  Several people mentioned that HPC aspects of numerical analysis are really within the realm of computer science and not mathematics.
+
+TIA...",tentmap,4,0.67,1,https://www.reddit.com/r/computerscience/comments/13u481w/parallel_numerical_analysis_algorithms_via/
+64,1685291908.0,Is anyone up for a puzzle with lots of Computer Science?,"Try this tiling puzzle. Let me know if you know the general problem and the solution to it.
+
+&#x200B;
+
+https://preview.redd.it/nxckw19ynl2b1.png?width=3723&format=png&auto=webp&s=67b9efe0d55050b7376514aefd3e237888b8ee30
+
+[Solve the problem here](https://excalidraw.com/#json=nVlrMxQXbqxdUvi4HGLru,t2b-It-V9aEXqK6MfxDw0A) and share your solution in the comments!
+
+For more weekly content about algorithms and Computer Science, consider subscribing to [Algorithmically Speaking](https://albexl.substack.com/)",albeXL,1,0.6,6,https://www.reddit.com/r/computerscience/comments/13u4tfr/is_anyone_up_for_a_puzzle_with_lots_of_computer/
+65,1685221851.0,That Computer Scientist - Why Sorting has n(logn) Lower Bound?,,luciferreeves,22,0.73,18,https://thatcomputerscientist.com/weblog/why-sorting-has-nlogn-lower-bound
+66,1685178618.0,A Visual Introduction to how we represent Graphs in a Computer Program,"Hello there!
+
+Today we will be diving into one of the most common ways of representing data and modeling problems (and solutions) in Computer Science. We will be talking about **Graphs**.
+
+This is the third of a series of posts introducing graph theory in a very visual way.
+
+Now that we know some basic definitions of graph theory, it is time to see how graphs can be represented in a program. We will explore the most common representations and analyze their pros and cons.
+
+**This is a summary version of the weekly edition of the Algorithmically Speaking newsletter. You can read the full article here:**
+
+[Algorithmically Speaking - #5: Representing Graphs](https://albexl.substack.com/p/graphs-representation)
+
+ Let’s begin! 
+
+ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+
+## Edge List
+
+The first representation we will explore today is the **edge list** representation. As its name implies, it consists of a **list** with the **edges** of the graph.
+
+An edge in this list consists of an ordered pair (x, y), representing that there is an edge from node x to node y.
+
+Let’s look at the following graph, where we have numbered the nodes from 1 to 5, and look at the corresponding edge list representation:
+
+https://preview.redd.it/z91ljjiu8c2b1.png?width=3423&format=png&auto=webp&s=758ab0e180d88bfb0ca0497c94fe513bc91973b3
+
+Notice that this graph is **directed**. If the pair (x, y) is present in the list, there is an edge starting in x and ending in y, but the opposite does not hold unless the pair (y, x) also appears in the list.
+
+If the graph is **undirected**, then the edge list representation will contain the ordered pairs (x, y) and (y, x) for every pair of adjacent nodes x and y.
+
+If we would like to represent a **weighted** graph, the most natural way to do it is by extending our representation of an edge to be a triplet instead of a pair.
+
+Let’s say we have edges starting from node x, ending in node y, with a weight of w. One way to represent those edges would be with a triplet of the form (x, y, w).
+
+Let’s add some weights to our previous graph and see what its edge list representation would look like:
+
+https://preview.redd.it/0ou8n7bz8c2b1.png?width=3690&format=png&auto=webp&s=97483bb05e0f23c55b416101c2269806c6ff9830
+
+The edge list representation is particularly useful for algorithms that process the edges of the graphs in some order. We will be exploring some of those algorithms when dealing with the **Minimum Spanning Tree** or the **Dynamic Connectivity** problems.
+
+But this will be in future posts. In the meantime, let’s move on to the next representation.
+
+## Adjacency Matrix
+
+An **adjacency matrix** is a two-dimensional array indicating the edges of the graph. Let’s denote this matrix as G.
+
+Each value G\[x\]\[y\] indicates whether the graph contains an edge from node x to node y. If the edge is included in the graph, then G\[x\]\[y\] = 1, and otherwise G\[x\]\[y\] = 0.
+
+Let’s take a look at our initial graph and its corresponding adjacency matrix:
+
+https://preview.redd.it/ay9r81sh9c2b1.png?width=4350&format=png&auto=webp&s=c10b3c56031f41bc369fd08bc4d9d0b6916be2f0
+
+Being able to read an adjacency matrix can give you insightful information about the graph.
+
+For example, inspecting the previous matrix, we can realize that node number 1 has the most outgoing edges, while node number 5 has the least (actually it doesn’t have any):
+
+https://preview.redd.it/p4kqcagv9c2b1.png?width=4350&format=png&auto=webp&s=c58ef832226a162d01bee305d0939fdc31802674
+
+Also, we can notice how even if it doesn’t have any outgoing edge, node number 5 has the largest number of incoming edges. On the other hand, node number 1 has no incoming edges:
+
+https://preview.redd.it/37sip89pac2b1.png?width=4350&format=png&auto=webp&s=ad3705d146a1a59036b58897f139f72c3932c62e
+
+If the graph is weighted, the adjacency matrix representation can be extended so that the matrix contains the weight of the edge if the edge exists. Otherwise, it will contain the number 0:
+
+https://preview.redd.it/tcehhnvuac2b1.png?width=4350&format=png&auto=webp&s=a33666da827faacc78b53632709ef3c9e8d94921
+
+ ***Note:*** *We are choosing the number* 0 *to represent the absence of an edge because it is convenient in this case. Nevertheless, for solving some graph-related problems, this number can vary. For example,* -1 *or a very big (or small) number can be used instead.*
+
+One of the greatest advantages of the adjacency matrix representation is that we can efficiently verify the existence of an edge. By indexing in a position \[x\]\[y\], we immediately know whether there is an edge or not between nodes x and y.
+
+On the other hand, one of its greatest drawbacks is the fact that it requires O(n\^2) space to represent a graph with n nodes.
+
+Let’s move forward to the last representation we’ll be exploring today!
+
+## Adjacency List
+
+The **adjacency list** representation is the most common way to represent graphs since most of the classic graph algorithms can be implemented very efficiently using this representation.
+
+Every node x will be assigned a list that will contain all the nodes to which there is an edge from x.
+
+Let’s see an example:
+
+https://preview.redd.it/4bu3jcg7bc2b1.png?width=3666&format=png&auto=webp&s=31bc8556a5f0dcc594d6a61aafb3c588ab2a33d1
+
+Notice how in this representation we store the exact neighbors for every node, instead of allocating space for all of the n nodes of the graph, as in the adjacency matrix representation.
+
+Let’s take a look at node number 1 and its neighbors:
+
+https://preview.redd.it/6arasajabc2b1.png?width=3666&format=png&auto=webp&s=f4a27e1f87ff264017755ff6f680dc9f1d0f1b51
+
+We could store ordered pairs instead of single integers to represent weighted graphs. The pairs would be of the form (y, w), where y represents a node and w represents the weight of the edge.
+
+Adding some weights to our previous graph:
+
+https://preview.redd.it/rlsbnlhgbc2b1.png?width=4368&format=png&auto=webp&s=2bfbe5712624fdfeee382f82e247533b717278a1
+
+ And once again, taking node number 1 as an example: 
+
+https://preview.redd.it/jnmmg4iibc2b1.png?width=4368&format=png&auto=webp&s=0f7ab2112cad22d4c1a92c3e33d8857de990062e
+
+An advantage of using adjacency lists is efficiently finding the nodes to which there is an edge from a given node.
+
+Notice that, potentially, a graph can have O(n\^2) edges, which would result in this representation using the same amount of memory that the adjacency matrix representation uses. But this is rarely the case in most practical graph problems.
+
+On the other hand, if we would want to check whether there is an edge between nodes x  
+ and y we would have to iterate the adjacency list of x until we find node y or reach the end of the list. So, adjacency matrices take the lead here.
+
+In future posts, we will explore algorithms for traversing graphs, finding shortest paths, or determining valid colorings.
+
+Most of these algorithms behave very differently depending on the type of representation we use for our graphs.
+
+We have very exciting weeks ahead!",albeXL,66,0.99,10,https://www.reddit.com/r/computerscience/comments/13t2ly6/a_visual_introduction_to_how_we_represent_graphs/
+67,1685195011.0,Coin flips and most significant bits,,rojoroboto,15,1.0,0,https://funcimp.biz/p/coin-flips-and-most-significant-bits
+68,1685157512.0,"Maximal Entropy Random Walk (MERW) - often more optimal than naive RW, lots of applications",,jarekduda,58,0.92,5,https://i.redd.it/86rippqqka2b1.gif
+69,1685124599.0,"Diagrams for machine code, a processor and disassembler for beginners and learning","Hey hey,
+
+I wanted to share with yall my diagrams for how these complex systems work. I think they work well at  elucidating computer science at its most basic level. Not all numbers are right on here, and Im too lazy to fix it, so if you find the wrong ones, please let me know and I'll fix, or fix it yourself and reply with the fixed file, please.
+
+One is how to build an instruction. The other one is how a simple processor processes instructions. The last one is a disassembler structure.
+
+If you find any of these useful or interesting, leave a comment. I'm trying to craft diagrams that make complex issues simple. Cheers!
+
+https://preview.redd.it/ub1ygau8v72b1.png?width=4500&format=png&auto=webp&s=ea999eb26ac74060d2c50d041eef5227b0996568
+
+https://preview.redd.it/7kz87hu8v72b1.png?width=4800&format=png&auto=webp&s=3e64120b7b567207119665604625a2ff031c7683
+
+&#x200B;
+
+*Processing img y017gsxqq92b1...*
+
+*Processing img gvi62dr5582b1...*",WinnerEconomy169,28,0.92,7,https://www.reddit.com/r/computerscience/comments/13skb8v/diagrams_for_machine_code_a_processor_and/
+70,1685104669.0,Algorithmically Speaking - #5: Representing Graphs,"Hello there!
+
+Today we will be diving into one of the most common ways of representing data and modeling problems (and solutions) in Computer Science. We will be talking about **Graphs**.
+
+This is the third of a series of posts introducing graph theory in a very visual way.
+
+Now that we know some basic definitions of graph theory, it is time to see how graphs can be represented in a program. We will explore the most common representations and analyze their pros and cons.
+
+At the end of the post, you will find some algorithmic challenges so you can try and apply some of the topics that I will explain today. Feel free to skip to that part if you think you already have the necessary skills to solve them.
+
+Have a nice read!
+
+[Algorithmically Speaking - #5: Representing Graphs](https://albexl.substack.com/p/graphs-representation)",albeXL,18,0.83,0,https://www.reddit.com/r/computerscience/comments/13sc33o/algorithmically_speaking_5_representing_graphs/
+71,1685029243.0,"Origin Stories: Plantations, Computers, and Industrial Control",,Maxwellsdemon17,29,0.95,1,https://logicmag.io/supa-dupa-skies/origin-stories-plantations-computers-and-industrial-control/
+72,1685121441.0,History of user passwords?,"Hi, can a computer program whose first page is a login screen store the history of passwords that a user has ever used in the past?
+
+Will the administrator be able to access the history of passwords used by each user?
+
+Thanks!",Panacotty,0,0.14,6,https://www.reddit.com/r/computerscience/comments/13sj1s7/history_of_user_passwords/
+73,1685041726.0,Looking for a book or website with common algorithm related problems,"I'm looking for a list of common CS problems, for example  ""the travelling salesman problem"". Whenever I go through hacker rank I always see a new problem name that I have never heard before. Is there a website or book were I can see such list, possibly with their solutions?",oldusernumber1,6,0.81,3,https://www.reddit.com/r/computerscience/comments/13rqdhz/looking_for_a_book_or_website_with_common/
+74,1685028808.0,Enterprise mode protocols question,"For sec+ exam 
+
+Anyone have any tips on what they are getting at in this question? 
+A company deployed a wireless access point and wishes to enable the Enterprise mode for secure wireless connections. The servers have certificates, but the supplicants do not. Which of the following options would fit the company's needs? (Select all that apply.) 
+Choices: EAP-FAST, EAP-MD5, RADIUS Federation, PEAP
+Answers: EAP-FAST, PEAP
+
+Like for example would EAP-TLS or EAP-TTLS also be correct answers?
+
+What is being implied by this part: The servers have certificates, but the supplicants do not.",PoliteRuleFollower,0,0.5,0,https://www.reddit.com/r/computerscience/comments/13rkvs7/enterprise_mode_protocols_question/
+75,1684967623.0,I recently derived a new line drawing function that hasn't ever been off by a few pixels and hasnt ever had gaps," 
+
+Bresenham's line drawing algorithm always goes off by a few pixels when I implement it, so I derived my own in a similar way.
+
+y=mx+b
+
+y=dy/dx x + b
+
+dx y = dy x + dx b
+
+0 = dy x - dx y + dx b
+
+f(m, n) = dy m - dx n + dx b
+
+N = f(x+t, y+u), f(x,y) = 0  
+N = dy(x+t) - dx(y+u) + dx b
+
+\- 0 = dy x - dx y + dx b
+
+N = dy t - dx u
+
+Let u = v+1/2:  
+N = dy t - dx (v+1/2)
+
+0 > dy t - dx (v+1/2)  
+dx(v+1/2) > dy t
+
+dx (2v+1) > 2 dy t
+
+This is the implementation that I be using as of this time.
+
+void drawLine(int x0, int y0, int x1, int y1, rgb color) {  
+int dx = abs(x1 - x0);  
+int dy = abs(y1 - y0);  
+int tilt = dy < dx ? -1 : 1;  
+int step = tilt == -1 ? x0 < x1 ? -1 : 1 : y0 < y1 ? -1 : 1;  
+int mode = tilt == -1 ? y1 < y0 ? -1 : 1 : x1 < x0 ? -1 : 1;  
+int sV = tilt == -1 ? x0 > x1 ? x1 : x0 : y0 > y1 ? y1 : y0;  
+int eV = tilt == -1 ? x0 > x1 ? x0 : x1 : y0 > y1 ? y0 : y1;  
+int L = tilt == -1 ? dx : dy;  
+int R = tilt == -1 ? dy : dx;  
+for(int i = sV, h = 0, l = L, r = -R, c = tilt == -1 ? x0 > x1 ? y1 : y0 : y0 > y1 ? x1 : x0; i <= eV; i++) {  
+if(l < (r += 2 \* R)) { h++; l += 2 \* L; }  
+if(tilt == -1) plot(i, c - h \* step \* mode, color);  
+if(tilt == 1) plot(c - h \* step \* mode, i, color);
+
+}
+
+}
+
+It hasn't been tested as far as I know, so I'm not sure if changing step and mode would break the function if it were to undergo extensive use, but this is an optimization that could be done:  
+int hStep = x0 < x1 ? tilt : -tilt;
+
+int vStep = y0 < y1 ? -tilt : tilt;
+
+&#x200B;
+
+Since line drawing functions are easily called countless times a frame, it would probably go faster due to checking that less, but I'm not sure how messing with the first one, which be more rigorous would affect things after extensive use.",NotWhiteRice,13,0.68,3,https://www.reddit.com/r/computerscience/comments/13r032h/i_recently_derived_a_new_line_drawing_function/
+76,1684896784.0,"I was understanding how hard links work, could you tell me if I'm right?","I did a representation of ""Hard Link"" and ""Copy""
+
+* [This is the hard link representation](https://i.imgur.com/5f3JCK7.png)
+* [This is the copy representation](https://i.imgur.com/VJjICqd.png)
+
+So, when copying a file, we actually duplicate the content of the file on the disk. If the file size is 5 MB, a copy will be an additional 5 MB, so a total of 10 MB.
+
+Wheres with hard links, if the file size is 5 MB, creating a hard link will not take another 5 MB on the disk. So the total will be 5 MB, and both the files point to the same content.
+
+Is that right?",Rachid90,8,1.0,7,https://www.reddit.com/r/computerscience/comments/13q90cn/i_was_understanding_how_hard_links_work_could_you/
+77,1684934150.0,HtDP vs SICS (intro CS courses): a discussion,"Good morning all!
+
+I would love to have a discussion on pros/cons of two of the most popular Comp-Sci intro courses I have seen in different CS/programming forums, these are SICS (Structure and Interpretation of Computer Programs) and HtDP (How to Design programs). 
+
+Some background: I am in a fortunate situation where I took an open source web-dev bootcamp and ended up getting a job as a software dev at a place I really love. The bootcamp certainly prepared me for many of the higher level topics in web/cloud dev however, I would really like to expand my own CS education as my undergrad was in physics and I feel many intro CS topics are missing from my toolbelt.   
+
+
+I have narrowed the ""start"" of my journey to the two video-curriculum-based classes mentioned above, each being pushed by their own open-source ""undergrad education tracks."" OSSU ([https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)) with HtDP and teachyourselfcs ([https://teachyourselfcs.com/](https://teachyourselfcs.com/)) with SICP. I started with OSSU as they have a verbose course-load with a large community, however I've had some MAJOR issues with the HtDP course that have really made me rethink that decision and would love to have some discussion & ideas from those that may have more/other experience and hopefully also create a resource for those that have this dilemma in the future. Below are my pros/cons for each.  
+
+
+HtDP  
+pros:  
+\- a part of the OSSU curriculum  
+\- unique approach to problem-solving first & tdd  
+cons:  
+\- ANY course access behind a paywall (3 months) on edEx  
+\- many practice problems in the course behind a paywall (there is a separate problem bank)  
+\- done in a course-specific & not very popular language (racket, which is a BSL language?)  
+\- pretty much requires their IDE, DrRacket, which (in my opinion) is horrible  
+\- tons of graphic-based problems & projects (this con is certainly opinion based)  
+
+
+ICS  
+pros:  
+\- multiple courses taught using the SICP book including those from MIT, Berkeley, and even more ""modern"" ones using python  
+\- open to the use of multiple languages (though Scheme, a Lisp dialect, is recommended)  
+\- lots of language resources  
+\- can esily use your own IDE/environment  
+\- no paywalls on most of the courses I've seen  
+cons:  
+\- older/less-modern classes  
+So... these lists probably do a good job of highlighting my biases and frustrations haha, hence why I'd like to have conversations with others. I've been completely turned off of the HtDP course by their paywalls and incredibly specific language/topics - this brings back memories of undergrad professors making you buy THEIR textbook - and just gives me a bad taste in my mouth and reeks of money. Both courses have free books so you can easily self-teach/pace yourself without their video-curriculum-courses, but I'd like to have that structure in my life as I'm working a full-time job. At this point, I'm likely just going to start the SICP Berkeley course, but the beginning of the HtDP was so unique and interesting in its TDD methodology and interface work I'm honestly a bit sad to leave it behind. Using a separate IDE & environment from the one I use at work every day and learned on is just unacceptable to me and figuring out how to replicate the work in my own just isn't worth the time investment (to me). Honestly, just a bit frustrated at all of the work I've tried to put into HtDP just to have course access removed after 3 months and having to make another fake account to reset all progress combined with their community's mentality of ""oh just do it, you must not be motivated enough!"" I'm an adult in a full-time job trying to learn, so I don't always have time to finish up a course this quickly, what can I say? Anyway, thoughts, discussions, and criticisms are all very very welcome!",shinshurt,0,0.43,3,https://www.reddit.com/r/computerscience/comments/13qlels/htdp_vs_sics_intro_cs_courses_a_discussion/
+78,1684856872.0,Is it possible (in theory) to do computations using wave interference?,"So, here's my question: can you do adition, subtraction, multiplication, division, (maybe even exponents and roots!) with nothing but wave interference?
+
+&#x200B;
+
+Basically, you have 2 photons that have the number encoded in each one. You have them interfere, then decode it. If destructive interference, it would subtract the number from it (a 10 would be twoice as much as a 5, so subtracting them would make a 5). Do the opposite, and you get a higher energy wave from those 2 merging (constructive interference), making a 15!
+
+Could such a system work for computations? (I doubt it would be good on modern day computers, but on massive computers that are big enough that the speed difference between electrons and photons is noticible, a system of mirrors and interference could allow calculations to occur at light speed).
+
+So, could addition and subtraction be done that way? If so, could multiplication and division be done *directly*, or would you just have to send a signal saying ""continue doing this ""x"" times"". What about exponents?
+
+Just wondering! (I might be trying to figure out how to run calculations for a [Matrioshka brain](https://en.wikipedia.org/wiki/Matrioshka_brain), a star-sized super computer... not feasible, but always good to have the plans, just in case!)",CTH2004,37,0.95,12,https://www.reddit.com/r/computerscience/comments/13psa7j/is_it_possible_in_theory_to_do_computations_using/
+79,1684883451.0,What topics would you like more info/books on?,"Hey, I have nothing to sell you first off. I'm trying to gather some feedback and tips from CS professionals. I am working with a book publisher and researching topics and curious what gaps you feel there are, what topics/languages/software etc would you love a book or resource on that may be hard to find?",ireallyloveoats,6,0.76,5,https://www.reddit.com/r/computerscience/comments/13q41u7/what_topics_would_you_like_more_infobooks_on/
+80,1684912470.0,Proposal: Interactive Challenges,"My newsletter is turning 1 month and I want to start engaging with the readers a lot more. For that reason I designed a method that will allow me to propose algorithmic challenges/puzzles in a more engaging/visual way.
+
+Everyone can share their answers to the problems by using a tool called Excalidraw. Give it a try and let me know what you think.
+
+Here's my proposal:  [Celebrating 1 Month of Algorithmic Posts](https://albexl.substack.com/p/one-month-of-algorithmic-posts)",albeXL,0,0.5,0,https://www.reddit.com/r/computerscience/comments/13qed3w/proposal_interactive_challenges/
+81,1684910861.0,Pipelined CPU when branching,"Let's say we have CPU that have four stages that happens: fetch decode execute write back. If we pipeline the CPU so that when it's decoding an instruction it also fetches a new instruction and so on. But what if the previous instruction coded branching and it increment the program counter by 1. But the instruction fetched is not the desired instruction because there was a branch.
+ 
+My question is how does CPU know, when this happens and what is the solution and what happens next?",Squixell,1,0.67,2,https://www.reddit.com/r/computerscience/comments/13qdvv8/pipelined_cpu_when_branching/
+82,1684848250.0,Extracting Antimicrobial Activity Data from Scientific Articles,"I need advice on extracting relevant information from articles on the antimicrobial activities of herbs. I want to extract data such as plant species, tested microbial species, the methodology used, and corresponding antimicrobial activity values.
+
+I have a database of 4152 plant species. For each plant species, I want to find a scientific article that reports its antimicrobial activity against tested microbial species. From each article, I need to extract:
+
+Plant species name
+Tested microbial species
+Methodology for antimicrobial activity testing
+Numeric values associated with antimicrobial activity (e.g., MIC values)
+I'm seeking suggestions, advice, and potential solutions for computationally tackling this project using machine learning or NLP.
+
+If you have any relevant resources, code snippets, or libraries that can assist in this data extraction task, please share them. Your help and suggestions are greatly appreciated.
+
+Note: I'm open to collaborating with individuals or teams interested in working on this project. Feel free to reach out if you're interested in joining forces.
+
+Thank you in advance for your assistance!",Apprehensive_View366,4,0.75,0,https://www.reddit.com/r/computerscience/comments/13pog5s/extracting_antimicrobial_activity_data_from/
+83,1684705427.0,Filling up 32bit opcode chart,"Hi, I am designing a 16 bit computer with 32bit instruction word. I have all components setup, but now I need to connect them. The thing is, that it would be great to know how which depends on the opcode. I want an advice how to use the 32bits. How many bits should specify the operation? Is 6bits (64 operations) enough? Or should I have 8 bits? I have 16 registers. I want 3 operand opcode therefore 12 bits are reserved for this purpose, when doing operations on data. 20bits left, so if 6-8?bits specifies operation then 12 or 14 bits are unused for operations on data. I cold use 2 bits  (or more?)to specify the mode of operation (adding with carry... etc.). But then there is like a byte empty. Some operation's doesn't use all the bits that's fine but is there a something I could fit in there?",Squixell,21,0.9,6,https://www.reddit.com/r/computerscience/comments/13o7afe/filling_up_32bit_opcode_chart/
+84,1684575711.0,"A visual introduction to the concepts of Degrees, Colorings, and Bipartite Graphs.","Hello there!
+
+Today we will be diving into one of the most common ways of representing data and modeling problems (and solutions) in Computer Science. We will be talking about **Graphs**.
+
+This is the second of a series of posts introducing graph theory in a very visual way.
+
+It will consist of some basic definitions of graph theory that will lay the basis for us to be able to explore more complex topics in future posts. The idea is to present the definitions along with visual representations, to help in the process of learning new concepts.
+
+Take a look at the previous posts of this series if you think you need some more background before diving into the content that will be exposed in this article:
+
+1. [Algorithmically Speaking - #3: Nodes, Edges, and Connectivity](https://albexl.substack.com/p/introduction-to-graph-theory)
+
+**This is a summary version of the weekly edition of the Algorithmically Speaking newsletter. You can read the full article here:**
+
+[Algorithmically Speaking - #4: Neighbors, Degrees, and Colorings](https://albexl.substack.com/p/an-introduction-to-graphs-ii)
+
+Let’s begin!
+
+ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+## Neighbors and Degrees
+
+Two nodes are **neighbors** or **adjacent** if there is an edge between them. The **degree** of a node is the number of its neighbors.
+
+In the following graph, we have highlighted a node (colored in green), its neighbors (colored in red), and the edges between them (colored in blue):
+
+https://preview.redd.it/jvl23n8vey0b1.png?width=771&format=png&auto=webp&s=18708ac8986ca1fd7d6ef1ba33b192216fcb8725
+
+ We can see that the green node has three incident edges and three neighbors, and therefore, it has a degree equal to 3.
+
+In the next image, we can see the degree of every node:
+
+https://preview.redd.it/0t39le8yey0b1.png?width=771&format=png&auto=webp&s=f16cea127a7992d600b19efa87996748e30c5d73
+
+Something to notice is the fact that the sum of degrees in a graph is always 2m, where m is the number of edges. This happens because each edge increases the degree of exactly two nodes by one. So, the sum of the degrees is always even.
+
+A graph is **regular** if the degree of every node is a constant d. A graph is **complete** if the degree of every node is n−1, where n is the number of nodes in the graph. That is, the graph contains all possible edges between the nodes. By definition, a complete graph is a regular graph.
+
+Here’s an example of a regular graph that is not complete. Notice how the degree of every node is 2:
+
+https://preview.redd.it/bwfrwpd4fy0b1.png?width=479&format=png&auto=webp&s=530ddf6f453e469d1c48e9b5cab34dcccc6acf18
+
+And this is an example of a complete graph. Notice how the degree of every node is 3 and there are 4 nodes: 
+
+https://preview.redd.it/ba443hp6fy0b1.png?width=479&format=png&auto=webp&s=613e6cfc34180beffb17c90f123bb955b08a7c00
+
+When we are referring to directed graphs, we define the **indegree** of a node as the number of edges that end at the node, and the **outdegree** of a node as the number of edges that start at the node.
+
+Here’s an example highlighting a node with an indegree equal to 2 and an outdegree equal to 1:
+
+https://preview.redd.it/zsztfb9bfy0b1.png?width=771&format=png&auto=webp&s=f79bda1967ee721c48abb24d957b0a4214517aca
+
+And these are the values of indegree/outdegree for every node. Notice how some nodes can have indegree or outdegree equal to 0:
+
+https://preview.redd.it/gehnxdeefy0b1.png?width=780&format=png&auto=webp&s=862850d6cdae875c579179d484463b13dc0005d6
+
+## Colorings
+
+In a **coloring** of a graph, each node is assigned a color so that no adjacent nodes have the same color.
+
+A graph is called **bipartite** if it is possible to find a coloring of its nodes using two colors. It can be proven that a graph is bipartite exactly when it does not contain a cycle with an odd number of edges.
+
+For example, the following graph is bipartite:
+
+https://preview.redd.it/u3ff564kiy0b1.png?width=771&format=png&auto=webp&s=f2fc3727103e4960f4f12348df9cdd73905c0ce7
+
+ We can claim that it is bipartite because we can find a coloring of the graph using only two colors:
+
+https://preview.redd.it/5q6tlbamiy0b1.png?width=771&format=png&auto=webp&s=a94bc6fb6e332cbf339c94e1718aab36831641f5
+
+And here’s a more intuitive way to visualize bipartite graphs. The previous and the following graphs are the same: 
+
+https://preview.redd.it/323j7qmoiy0b1.png?width=604&format=png&auto=webp&s=f5d2fda73372482f91636d8ed28b4511c72800c8
+
+With this representation, it becomes visually more clear that the nodes can be split into two sets, and that every edge in the graph connects nodes from different sets.
+
+Now, let’s take a look at the following graph:
+
+https://preview.redd.it/zw1ejb3riy0b1.png?width=771&format=png&auto=webp&s=9b2327d0cc3a220489b0b45add7e217cf5cf5a08
+
+No matter how hard you try, you won’t be able to find a coloring of this graph using only two colors. Remember earlier, when we said that cycles of odd length and bipartiteness are related?
+
+Inspecting the graph closely, we can notice that it contains a cycle of length 3. It won’t be possible to color this cycle (or the entire graph) using only two colors:
+
+https://preview.redd.it/32fw886tiy0b1.png?width=771&format=png&auto=webp&s=03f2155022d4c1eb696d067ab4abba305c15283a
+
+In future posts, we will explore algorithms to determine if a graph is bipartite or not. Also, we will dig deeper into how the degrees of nodes play an important role in finding topological orderings in directed graphs.",albeXL,29,0.87,0,https://www.reddit.com/r/computerscience/comments/13mng69/a_visual_introduction_to_the_concepts_of_degrees/
+85,1684544115.0,Looking for theoretical CS books to gift a high schooler,"My cousin who's in high school has his birthday coming up. He likes to geek over his machine-learning projects: Small stuff that you can tinker with in Python and get up and running. I want to give him a taste of what theoretical computer science looks like; i.e. stuff like complexity theory, learning theory, computational logic, and the like, that'll make him think about the deeper aspects of computer science. I am not sure if books for such an audience exists, especially given that he does not have a rigorous background in statistics or languages, and would really like recommendations from the community. Thanks in advance!",evil_indian_potato,31,0.87,26,https://www.reddit.com/r/computerscience/comments/13mdcv8/looking_for_theoretical_cs_books_to_gift_a_high/
+86,1684503591.0,"Algorithmically Speaking - #4: Neighbors, Degrees, and Colorings","Hello there!
+
+Today we will be diving into one of the most common ways of representing data and modeling problems (and solutions) in Computer Science. We will be talking about **Graphs**.
+
+This will be the first of a series of posts introducing graph theory in a very visual way.
+
+It will consist of some basic definitions of graph theory that will lay the basis for us to be able to explore more complex topics in future posts. The idea is to present the definitions along with visual representations, to help in the process of learning new concepts.
+
+At the end of the post, you will find some algorithmic challenges so you can try and apply some of the topics that I will explain today. Feel free to skip to that part if you think you already have the necessary skills to solve them.
+
+Have a nice read!
+
+[Algorithmically Speaking - #4: Neighbors, Degrees, and Colorings](https://albexl.substack.com/p/an-introduction-to-graphs-ii)",albeXL,34,0.91,0,https://www.reddit.com/r/computerscience/comments/13lvrh2/algorithmically_speaking_4_neighbors_degrees_and/
+87,1684518542.0,Book recommendations for route planning,I am interested in route planning for trucking and last mile delivery and would love to read up on it.,burg_to_314,5,0.86,0,https://www.reddit.com/r/computerscience/comments/13m2lts/book_recommendations_for_route_planning/
+88,1684431890.0,Is ssh authentication an example of Zero Knowledge Proofs?,"When i use ssh authentication, I am not sending my private key to my authenticating entity, but the fact that i can use the private key to decrypt some information encrypted using the public key proves that i have the private key. This seems like a zero knowledge proof.",terimamimeri,28,0.91,9,https://www.reddit.com/r/computerscience/comments/13l5kn7/is_ssh_authentication_an_example_of_zero/
+89,1684509706.0,Even Geoffrey Hinton quit his job. What should we learn and what should we do now?," Guys, we realized that ai is quite dangerous. I'm interested in software developement (but not ai). I have a lot of questions about these situations.
+
+What and how much will we know about AI in the future? Should w learn to use AI or will the technologies that will prevent AI be valued? And what should the elderly, not the young, do and learn? How can we raise awareness about artificial intelligence? What are you doing about these issues?",Ced3j,0,0.35,11,https://www.reddit.com/r/computerscience/comments/13lylrz/even_geoffrey_hinton_quit_his_job_what_should_we/
+90,1684434648.0,What are some cool Computer Science journals that you can read as social media?,"I’m trying to replace Social Media in my life with something better than it. I’m a subscriber for a few culture related journals, but nothing about CS. Any recommendations?",DogronDoWirdan,5,0.78,1,https://www.reddit.com/r/computerscience/comments/13l6v1u/what_are_some_cool_computer_science_journals_that/
+91,1684431201.0,Data Structures - Doubt about a definition in Priority Queue,"I'm trying to understand the following question, from a test, about priority queue:
+
+    What is the sorting method represented by a linear array 
+    filled with keys s_1,..,s_n satisfying the following property: 
+    s_i <= s_{1/2}, for i<=n? 
+    a) Insertion
+    b) Priority Queue
+    c) Quicksort
+    d) Shellsort
+    e) Selection
+
+Well, given that I know the correct answer and understand the basics about this abstract data structure, I have no idea how to justify that an implementation of it has this property described.  Can someone explain it to me or point to a reference about that?",linconcr,2,1.0,6,https://www.reddit.com/r/computerscience/comments/13l5ajz/data_structures_doubt_about_a_definition_in/
+92,1684422546.0,Can all NP-complete problems be reduced to NP?,"
+
+I know that by definition, all NP problems can be reduced to  NP-Complete problems. But does that also applies the other way around?
+
+Can all NP-Complete be reduced to NP problems?
+
+My understanding is that it cannot be done, since that would mean that both are equally complex, therefore NP=NP-Complete.
+
+But the answer to this post seems to point into this direction: [Can an NP-Complete problem be reduced to an NP problem?](https://cs.stackexchange.com/questions/128873/can-an-np-complete-problem-be-reduced-to-an-np-problem)",Oatwarrior,0,0.5,25,https://www.reddit.com/r/computerscience/comments/13l1n1x/can_all_npcomplete_problems_be_reduced_to_np/
+93,1684337736.0,Sending data from a device to another without DMA and without CPU,"A very basic and stupid question that I've been thinking about. I don't think it's possible, i just cannot think why its not possible. Like why can't I just have two USB sticks magically transfer data from one device to another.
+
+Q: Can a device send data to another device without dma or cpu. i.e no memory is involved, no cpu is involved.",nudebaba,17,0.76,14,https://www.reddit.com/r/computerscience/comments/13k56wq/sending_data_from_a_device_to_another_without_dma/
+94,1684346232.0,What does it take to create a log monitoring system?,"With the log monitoring seemingly always a paid service. What does it take to build one in-house. 
+
+My understanding is that if the app logs are already formatted in JSON it's all about representing it as graphs on a web UI which might include the # hits based on unique ips, 4XX errors 5XX and 2XX responses. Am I missing any thing here?",duniyaa,2,0.63,2,https://www.reddit.com/r/computerscience/comments/13k93ob/what_does_it_take_to_create_a_log_monitoring/
+95,1684255279.0,Programming without a stack trace: When abstractions become illusions,"This [insightful article](https://architectelevator.com/architecture/stacktrace-abstraction/) by [Gregor Hohpe](https://linkedin.com/in/ghohpe) covers:
+
+* Evolution of programming abstractions.
+* Challenges of cloud abstractions.
+* Importance of tools like stack traces for debugging, especially in distributed systems.
+
+Gregor emphasizes that effective cloud abstractions are crucial but tricky to get right. He points out that debugging at the abstraction level can be complex and underscores the value of good error messages and observability. 
+
+The part about the ""unhappy path"" particularly resonated with me: 
+
+>The unhappy path is where many abstractions struggle. Software that makes building small systems easy but struggles with real-world development scenarios like debugging or automated testing is an unwelcome version of “demoware” - it demos well, but doesn’t actually work in the real world. And there’s no unlock code. ... I propose the following test for vendors demoing higher-level development systems:  
+>  
+>1. Ask them to enter a typo into one of the fields where the developer is expected to enter some logic.  
+>  
+>2. Ask them to leave the room for two minutes while we change a few random elements of their demo configuration. Upon return, they would have to debug and figure out what was changed.  
+>  
+>Needless to say, no vendor ever picked the challenge.
+
+# Why it interests me
+
+I'm one of the creators of [Winglang](https://github.com/winglang/wing), an open-source programming language for the cloud that allows developers to work at a higher level of abstraction. 
+
+We set a goal for ourselves to provide good debugging experience that will allow developers to debug cloud applications in the context of the logical structure of the apps.
+
+After reading this article I think we can rephrase the goal as being able to easily pass Gregor's vendor test from above :)",shai-ber,43,0.93,0,https://www.reddit.com/r/computerscience/comments/13jaas7/programming_without_a_stack_trace_when/
+96,1684255308.0,"What's the difference between clock - cycle , clock - pulse and clock edge ?",I find these terms confusing. Please help me understand.,,8,0.83,2,https://www.reddit.com/r/computerscience/comments/13jab8z/whats_the_difference_between_clock_cycle_clock/
+97,1684147304.0,Curated list of all Financial Computer Science Competitions [Open for contribution],"Hey guys, I am currently checking all the good Computer Science contests with prize money. I thought you might be interested in my curated list!
+
+Feel free to suggest edits!
+
+I just created a Github repository to [**stay up to date**](https://github.com/go-east/machine-learning-competitions) |
+
+Don't hesitate to contribute! I would like to make it a website one day :)
+
+&#x200B;
+
+||Pro|Con|
+|:-|:-|:-|
+|[**Worldquant**](https://www.worldquant.com/)|Potential for recruitment at WorldQuant Cash prizes Highly competitive competition|Difficult to differentiate yourself in the crowd! (well you need to win)|
+|[**Datathon by Citadel**](https://www.citadel.com/careers/students/datathons/)|Access to real-world problems Potential for recruitment|Difficult to differentiate yourself from the crowd! (well you need to win)|
+|**Challenge Data**|Diverse challenges Yearly award ceremony|No financial reward, competition is for the love of mathematics|
+|[**ADIA Lab Competition**](https://crunchdao.com/live/adialab)|Opportunity to compete among the best in the field. Biggest Prize Pool!|Uncertain about potential recruitment|
+|[**Kaggle**](https://kaggle.com)|Well...Most well-known competition Diverse challenges Variety of topics Multiple competitions|Difficult to differentiate yourself Not focused on finance|
+|[**CrunchDAO**](https://crunchdao.com)|Opportunity to compete among the best in the field Opportunity to earn passive income. Support from DAO community. Receive certification from top financial institutions. Opportunity to earn Passive Income|Community access is exclusive.|
+
+&#x200B;",Cruncher_ben,39,0.87,13,https://www.reddit.com/r/computerscience/comments/13i4kka/curated_list_of_all_financial_computer_science/
+98,1684167892.0,Operating system (ish) question,Would it be easier to make a program that mimics an operating system without actually making it an operating system?,ZookeepergameFit4103,0,0.27,11,https://www.reddit.com/r/computerscience/comments/13icswj/operating_system_ish_question/
+99,1683968368.0,A Visual Introduction to the basic concepts of Graph Theory.,"Hello there!
+
+Today we will be diving into one of the most common ways of representing data and modeling problems (and solutions) in Computer Science. We will be talking about **Graphs**.
+
+This will be the first of a series of posts introducing graph theory in a very visual way.
+
+It will consist of some basic definitions of graph theory that will lay the basis for us to be able to explore more complex topics in future posts. The idea is to present the definitions along with visual representations, to help in the process of learning new concepts.
+
+**This is a summary version of the weekly edition of the Algorithmically Speaking newsletter. You can read the full article here:**
+
+[Algorithmically Speaking - #3: Nodes, Edges, and Connectivity](https://albexl.substack.com/p/introduction-to-graph-theory)
+
+Let’s begin!
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+## Nodes, Edges, and Paths
+
+A **graph** consists of **nodes** and **edges**. We could see the nodes as the fundamental entities of graphs, and edges represent the relationships between nodes.
+
+One good thing about graphs is that, even if they represent an abstract mathematical definition, we can visually display them using the most simple drawings of circles and lines.
+
+Here’s a hand-drawn image of a graph with 5 nodes and 7 edges that we will we use to help us understand some basic definitions:
+
+https://preview.redd.it/0a1y8llz8kza1.png?width=771&format=png&auto=webp&s=e13eb20bb4d163185d0b754ce8a619c2c6abd44a
+
+A **path** leads from node **a** to node **b** through the edges of the graph. The length of a path is the number of edges in it.
+
+The highlighted (red) path between the two green nodes in the following image is of length 3:
+
+https://preview.redd.it/a36yrzy09kza1.png?width=771&format=png&auto=webp&s=dc22c26073857a8d5a773e081e7929af429c67f3
+
+>***Note****: The highlighted path is just one of the possible paths between the two green nodes. Try to identify every possible path between them.*
+
+A path is a **cycle** if the first and last node is the same. On the other hand, a path is called **simple** if each node appears at most once in the path.
+
+The highlighted path in the previous image corresponds to a simple path, while the one in the following image is considered a cycle:
+
+https://preview.redd.it/hpnn0bz39kza1.png?width=771&format=png&auto=webp&s=c981d45b507ec9cddf18e3dbd1f445da167b9ff3
+
+## Connectivity
+
+A graph is **connected** if there is a path between any two nodes. For example, our initial graph is connected:
+
+https://preview.redd.it/aldp6s2o9kza1.png?width=771&format=png&auto=webp&s=315fd6168db76955c5f7469e63246228dd829857
+
+>***Try it yourself****: take any pair of nodes in the previous graph and check that, indeed, there is a path between them.*
+
+On the other hand, the following graph is **not connected** because there is no path between the highlighted nodes:
+
+https://preview.redd.it/u1wp2s2lakza1.png?width=1012&format=png&auto=webp&s=7684d57bebc41f14bfaf7b48cb67bb0284610563
+
+In fact, there is no path between any node located in the right-bottom corner and any node located in the left-top corner.
+
+The sets of connected nodes in a graph are called **connected components**. Here are the connected components (nodes with the same color) of the previous graph:
+
+https://preview.redd.it/h049y5nnakza1.png?width=1296&format=png&auto=webp&s=2e0495b2e55586068ba40a158dcd11fcbf9ccbd8
+
+We can clearly see that this graph has two connected components.
+
+A **tree** is a connected graph that consists of **n** nodes and **n−1** edges. There is a unique path between any two nodes of a tree. You can also think of a tree as a connected graph that doesn’t contain any cycles.
+
+The following graph is a tree:
+
+https://preview.redd.it/b29o042rakza1.png?width=771&format=png&auto=webp&s=2158bdac8f4013ed1f327e7a8129dc111dae5171
+
+>***Try it yourself****: take any pair of nodes in the previous graph and check that, indeed, there is a* ***unique*** *path between them.*
+
+## Direction and Weights
+
+A graph is **directed** if the edges can be traversed in one direction only. For example, the following graph is directed:
+
+https://preview.redd.it/qduyg4btakza1.png?width=771&format=png&auto=webp&s=8bbd5eecbd306c9b5e207feab5fea676ed1bfc9c
+
+Notice how in the following image there is a path (more than one actually) between the green node and the blue node, but the opposite is not true. You cannot find any path starting in the blue node and ending in the green one:
+
+https://preview.redd.it/x04bpvlkckza1.png?width=771&format=png&auto=webp&s=a5a8f97b1f4d4e3610ce17aa6433008f7eeb7dd6
+
+As we can see, the fact the graph is directed affects the concept of connectivity, which is called **strong connectivity** when we are referring to directed graphs. We will learn more about this in future posts.
+
+In a **weighted** graph, each edge is assigned a **weight**. The weights are often interpreted as edge lengths.
+
+The following graph is weighted:
+
+https://preview.redd.it/convruznckza1.png?width=771&format=png&auto=webp&s=9b29d6107bf86ae4ecbf305c3602d1f01e609ece
+
+The length of a path in a weighted graph is the **sum** of the edge weights on the path. For example, in the following graph, the length of the highlighted path between the green nodes is 13 (8 + 5):
+
+https://preview.redd.it/orcc39orckza1.png?width=771&format=png&auto=webp&s=18e069b59160b40f18f94ae7037b4f5d44cb1779
+
+In future posts, we will explore algorithms related to connectivity, we will dig deeper into the importance of weights, and will learn some definitions that only make sense when we are talking about directed graphs.",albeXL,109,0.97,5,https://www.reddit.com/r/computerscience/comments/13gc8jm/a_visual_introduction_to_the_basic_concepts_of/
