@@ -1,4 +1,4 @@
-from dash import Dash, html, dcc
+from dash import Dash, html, dcc, Input, Output, callback
 import plotly.express as px
 import pandas as pd
 import dash_bootstrap_components as dbc
@@ -31,16 +31,35 @@ app.layout = html.Div(children=[
     dcc.Dropdown(
         ['VADER'],
         'VADER',
-        id='dropdown_sentiment_model_name'
+        id='dropdown_sentiment_model_name',
+        style= {"margin": "5px"}
     ),
     
-    html.Div(id='sentiment_drop_down', style=MARGIN_10)
+    html.Div(id='sentiment_drop_down_text', style=MARGIN_10),
+    html.H2(id='subreddit_header_text', style=MARGIN_10)
     
     # dcc.Graph(
     #     id='example-graph',
     #     figure=fig
     # )
 ])
+
+@callback(
+    Output(component_id='subreddit_header_text', component_property='children'),
+    Input(component_id='input_subreddit', component_property='value')
+)
+def update_subreddit(input_subreddit):
+    if not input_subreddit:
+        return ""
+    return "Analysis of /r/{}".format(input_subreddit)
+
+
+@callback(
+    Output(component_id='sentiment_drop_down_text', component_property='children'),
+    Input(component_id='dropdown_sentiment_model_name', component_property='value')
+)
+def update_model(dropdown_value):
+    return "You have selected {}".format(dropdown_value)
 
 if __name__ == '__main__':
     app.run(debug=True)
