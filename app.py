@@ -14,18 +14,16 @@ df = pd.DataFrame({
     "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
 })
 
-MARGIN_10 = {"margin": "10px"}
-
 # fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
 app.layout = html.Div(children=[
-    html.H1(children='Reddit Sentiment Analysis Dashboard', style=MARGIN_10),
-    html.Div(children='Analyze the Sentiment of your Favorite Subreddit and more!', style=MARGIN_10),
+    html.H1(children='Reddit Sentiment Analysis Dashboard', style={"margin": "10px"}),
+    html.Div(children='Analyze the Sentiment of your Favorite Subreddit and more!', style={"margin": "10px"}),
 
     dcc.Input(
         id='input_subreddit',
         placeholder="Enter a Subreddit here.",
-        style=MARGIN_10
+        style={"margin": "10px"}
     ),
     
     dcc.Dropdown(
@@ -35,8 +33,8 @@ app.layout = html.Div(children=[
         style= {"margin": "5px"}
     ),
     
-    html.Div(id='sentiment_drop_down_text', style=MARGIN_10),
-    html.H2(id='subreddit_header_text', style=MARGIN_10)
+    html.Div(id='sentiment_drop_down_text', style={"margin": "10px"}),
+    html.H2(id='subreddit_header_text', style={"margin": "10px"})
     
     # dcc.Graph(
     #     id='example-graph',
