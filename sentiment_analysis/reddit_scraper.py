@@ -11,7 +11,7 @@ class RedditScraper:
         )
     
 
-    def scrape_subreddit_submissions(self, subreddit: str, kind='hot', text_type ='submissions') -> pd.DataFrame:
+    def scrape_subreddit_submissions(self, subreddit: str, kind='hot', text_type ='submissions', limit=300) -> pd.DataFrame:
         
         if kind not in ('hot', 'top', 'controversial', 'new'):
             raise Exception("kwarg 'kind' should be of: ['hot', 'top', 'controversial', 'new']")
@@ -22,13 +22,13 @@ class RedditScraper:
         subreddit = self.reddit.subreddit(subreddit)
         
         if kind == 'hot':
-            submissions = subreddit.hot(limit=300)
+            submissions = subreddit.hot(limit=limit)
         elif kind == 'controversial':
-            submissions = subreddit.controversial(limit=300)
+            submissions = subreddit.controversial(limit=limit)
         elif kind == 'top':
-            submissions = subreddit.top(limit=300)
+            submissions = subreddit.top(limit=limit)
         elif kind == 'new':
-            submissions = subreddit.new(limit=300)
+            submissions = subreddit.new(limit=limit)
         
         if text_type == 'submissions':
             return self.process_submissions(submissions)
