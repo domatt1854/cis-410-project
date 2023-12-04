@@ -27,7 +27,7 @@ app.layout = html.Div(children=[
     ),
     
     dcc.Dropdown(
-        ['VADER'],
+        ['VADER','KNN','Decision Tree','Random Forest','Logisistic Regression','SGD'],
         'VADER',
         id='dropdown_sentiment_model_name',
         style= {"margin": "5px"}
@@ -61,3 +61,4 @@ def update_model(dropdown_value):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
