@@ -9,25 +9,21 @@ class Vader():
         res = []
 
         for index, row in df.iterrows():
-            print(index)
+            # print(index)
             try:
-                res.append(self.model.polarity_scores(row['text']))
+                scores = self.model.polarity_scores(row['text'])
+                # print(scores)
+                scores['id'] = row['id']
+                res.append(scores)
+                
             except Exception:
-                res.append(
-                    {
-                        'neg': None,
-                        'neu': None,
-                        'pos': None,
-                        'compound': None
-                    }
-                )
+                continue
         
-        vader_results = pd.DataFrame.from_records(res).reset_index().rename(columns={'index': 'Unnamed: 0'}).merge(df, how='left')
+        vader_results = pd.DataFrame.from_records(res).dropna()    
         vader_results['sentiment'] = vader_results['compound'].apply(calculate_sentiment)
-        
-        return vader_results
-        
-def calculate_sentiment(self, sentiment_score):
+        return vader_results.merge(df, how='left', on='id', validate="1:1")
+
+def calculate_sentiment(sentiment_score):
     if sentiment_score >= 0.05:
         return "Positive"
     elif -0.05 <= sentiment_score <= 0.05:
