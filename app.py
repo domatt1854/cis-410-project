@@ -1,4 +1,4 @@
-from dash import Dash, html, dcc, Input, Output, callback
+from dash import Dash, html, dcc, Input, Output, callback,State
 import plotly.express as px
 import pandas as pd
 import dash_bootstrap_components as dbc
@@ -23,18 +23,20 @@ app.layout = html.Div(children=[
     dcc.Input(
         id='input_subreddit',
         placeholder="Enter a Subreddit here.",
+        type='text',
         style={"margin": "10px"}
     ),
     
     dcc.Dropdown(
-        ['VADER','KNN','Decision Tree','Random Forest','Logisistic Regression','SGD'],
+        ['VADER','KNN','Decision Tree','Random Forest','Logisistic Regression','SGD','Voting(Hard)','Voting(Soft)'],
         'VADER',
         id='dropdown_sentiment_model_name',
         style= {"margin": "5px"}
     ),
     
     html.Div(id='sentiment_drop_down_text', style={"margin": "10px"}),
-    html.H2(id='subreddit_header_text', style={"margin": "10px"})
+    html.H2(id='subreddit_header_text', style={"margin": "10px"}),
+    html.Button('Submit', id='submit-val')
     
     # dcc.Graph(
     #     id='example-graph',
@@ -43,21 +45,13 @@ app.layout = html.Div(children=[
 ])
 
 @callback(
-    Output(component_id='subreddit_header_text', component_property='children'),
-    Input(component_id='input_subreddit', component_property='value')
+    Output(component_id='subreddit_header_text',component_property='children'),
+    Input(component_id='submit-val',component_property='n_clicks'),
+    State(component_id='dropdown_sentiment_model_name', component_property='value'),
+    State(component_id='input_subreddit',component_property='value')
 )
-def update_subreddit(input_subreddit):
-    if not input_subreddit:
-        return ""
-    return "Analysis of /r/{}".format(input_subreddit)
-
-
-@callback(
-    Output(component_id='sentiment_drop_down_text', component_property='children'),
-    Input(component_id='dropdown_sentiment_model_name', component_property='value')
-)
-def update_model(dropdown_value):
-    return "You have selected {}".format(dropdown_value)
+def performAnalysis(n_clicks,value,name):
+    return 'Performing analysis on "{}" using {}'.format(name,value)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,5 +1,6 @@
 from nltk.sentiment import SentimentIntensityAnalyzer
 from vader import Vader
+import joblib
 
 class Model:
     def __init__(self):
@@ -8,6 +9,13 @@ class Model:
         # Load in All Models Pickle Files Here
         
         self.vader = Vader()
+        self.decisionTree = joblib.load('joblib-DT-Model.pkl')
+        self.kNN = joblib.load('joblib-KNN-Model.pkl')
+        self.logisticRegression = joblib.load('joblib-LR-Model.pkl')
+        self.randomForest = joblib.load('joblib-RF-Model.pkl')
+        self.sgd = joblib.load('joblib-SC-Model.pkl')
+        self.votingSoft = joblib.load('joblib-vh-Model.pkl')
+        self.votingHard =  joblib.load('joblib-vs-model.pkl')
         
         ## Load in Logistic Regression, K nearest Neighbors, etc.
         
