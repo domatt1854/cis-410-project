@@ -1,5 +1,7 @@
+import re
 import nltk
 import json
+import string
 import pandas as pd
 import random
 import numpy as np
@@ -9,10 +11,15 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sklearn.neighbors import KNeighborsClassifier
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 nltk.download('movie_reviews')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 class Sentiment_Scorer:
     def __init__(self, data, model):
+        # Remove Nan
+        data = data.dropna(subset=['text'])
         self.data = data
         if model == None:
             raise Exception("Model has not been selected")
@@ -43,6 +50,34 @@ class Sentiment_Scorer:
         self.analyzer = SentimentIntensityAnalyzer()
         self.ps = PorterStemmer()
 
+    
+    def clean_text(self,text):
+        def preprocess_text(text):
+            text = text.lower()
+            #eliminate the punctuation, URL, and @
+            text = re.sub(r"(@\[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)|^rt|http.+?", "", text) 
+            text = re.sub(r'\d+', '', text) # Remove digits
+            text = re.sub(r'[^\w\s]', '', text) # Remove special characters
+            tokens = nltk.word_tokenize(text) # Tokenize the text
+            return tokens
+        
+        def remove_stopwords(tokens):
+            stop_words = set(stopwords.words('english'))
+            filtered_words = [word for word in tokens if word not in stop_words]
+            return filtered_words
+        
+        def perform_lemmatization(tokens):
+            lemmatizer = nltk.WordNetLemmatizer()
+            lemmatized_tokens = [lemmatizer.lemmatize(token) for token in tokens]
+            return lemmatized_tokens
+        
+        tokens = preprocess_text(text)
+        filtered_tokens = remove_stopwords(tokens)
+        lemmatized_tokens = perform_lemmatization(filtered_tokens)
+        clean_text = ' '.join(lemmatized_tokens)
+        return clean_text
+    
+
     def get_features(self, text):
         def intersection(list1,list2):
             x = set(list1)
@@ -64,7 +99,7 @@ class Sentiment_Scorer:
         features['vader(compound)'] = scores['compound']
         
         # Feature #3 - Positive and Negative Words Frequency
-        words = word_tokenize(text)
+        words = text.split()
         words = [self.ps.stem(word) for word in words]
         pos = intersection(words,self.positive_words)
         neg = intersection(words,self.negative_words)
@@ -92,7 +127,7 @@ class Sentiment_Scorer:
         res = []
         for index, row in self.data.iterrows():
             try:
-                res.append(self.model.classify(self.get_features(row['text'])))
+                res.append(self.model.classify(self.get_features(self.clean_text(row['text']))))
             except:
                 res.append(None)
         result_df = self.data
