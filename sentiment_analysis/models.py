@@ -1,4 +1,5 @@
 import nltk
+import json
 import pandas as pd
 import random
 import numpy as np
@@ -34,23 +35,10 @@ class Sentiment_Scorer:
             
         self.tfidf_vectorizer = joblib.load('tfidf-vector.pkl')
 
-        unwanted = nltk.corpus.stopwords.words("english")
-        unwanted.extend([w.lower() for w in nltk.corpus.names.words()])
-        def skip_unwanted(pos_tuple):
-            word, tag = pos_tuple
-            if not word.isalpha() or word in unwanted:
-                return False
-            if tag.startswith("NN"):
-                return False
-            return True
-        self.positive_words = [word for word, tag in filter(
-                          skip_unwanted,
-                          nltk.pos_tag(nltk.corpus.movie_reviews.words(categories=["pos"]))
-                        )]
-        self.negative_words = [word for word, tag in filter(
-                          skip_unwanted,
-                          nltk.pos_tag(nltk.corpus.movie_reviews.words(categories=["neg"]))
-                        )]
+        with open("negative.json", "r") as fp: 
+            self.positive_words = json.load(fp)
+        with open("positive.json", "r") as fp: 
+            self.negative_words = json.load(fp)
 
         self.analyzer = SentimentIntensityAnalyzer()
         self.ps = PorterStemmer()
