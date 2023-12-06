@@ -119,7 +119,7 @@ class Sentiment_Scorer:
 
         return features
 
-
+        
     def label_dataset(self):
         ## 0 Indicating it is a Neutral Tweet/Comment
         ## 1 Indicating a Postive Sentiment
@@ -132,9 +132,16 @@ class Sentiment_Scorer:
                 res.append(None)
         result_df = self.data
         result_df['sentiment'] = res
+        result_df['sentiment'] = result_df['sentiment'].apply(lambda x: calculate_sentiment(x))
     
         return result_df
         
         
-        
+def calculate_sentiment(sentiment_score):
+    if sentiment_score >= 1:
+        return "Positive"
+    elif sentiment_score == 0:
+        return "Negative"
+    else:
+        return "Neutral"
     
