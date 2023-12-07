@@ -49,5 +49,6 @@ python app.py
 ```
 
 This will launch your `Dash Plotly` Application.
+
 Then you can access our dashboard using the following localhost link: http://127.0.0.1:8050/
 
