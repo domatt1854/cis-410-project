@@ -6,9 +6,17 @@
 
 **Captain** - Matthew Do
 
-# Getting Started
+# Table of Contents
 
-### Signing up for Credentials to Authenticate to Reddit API
+1. [Getting Started](#introduction)
+2. [Web Application Architecture](#architecture)
+
+<a name="introduction"></a>
+# Getting Started 
+
+Welcome to our CIS 410 Group project! Over the last few months, we have worked diligently on finding a solution to provide users with useful metrics and visualizations of their favorite subreddit. Follow the steps below to run the application locally on your computer.
+
+## Signing up for Credentials to Authenticate to Reddit API
 
 Our dashboard requires access to the Reddit API. 
 
@@ -20,7 +28,7 @@ After creating your application, navigate to the `secret.py` module and substitu
 
 The `USER_AGENT` can be any value you desire.
 
-### Installing Dependencies
+## Installing Dependencies
 
 To install dependencies required to run all notebooks and applications, run the script in your terminal where `requirements.txt` is located.
 
@@ -28,7 +36,7 @@ To install dependencies required to run all notebooks and applications, run the 
 pip install -r requirements.txt
 ```
 
-# Running the Application
+## Running the Application
 
 To run the application, run the following command in your terminal
 
@@ -38,7 +46,8 @@ python app.py
 
 This will launch your `Dash Plotly` Application, and can usually be accessed using the following localhost link: http://127.0.0.1:8050/
 
-# Web Application Architecture
+<a name="architecture"></a>
+# Web Application Architecture 
 
 ![Web Application Architecture](images/web_application_diagram.png)
 
@@ -55,3 +64,15 @@ We pickled our models and encapsulated them in `models.py` and took an Object-Or
 ### Dash Plotly
 
 This is the front-end of our application. It is responsible for integrating our modules for analyzing sentiment and passing the data fetched from the Reddit API.
+
+
+# Challenges
+
+## Code Optimization
+
+### Reddit API Limitations
+
+Fetching posts is limited to 100 posts per call. For each batch of 100 posts, there is a delay of about 1 second. After testing with different amounts of posts, we discovered that about 300 posts offers the best balance between application performance and analytic utility. 
+
+### Text Pre-Processing
+
