@@ -28,9 +28,9 @@ For Windows Users:
 ```
 pip install -r requirements_windows.txt
 ```
-For Mac Users
+For Mac Users:
 ```
-For Mac Users: pip install -r requirements_macos.txt
+pip install -r requirements_macos.txt
 ```
 
 # Running the Application
