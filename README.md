@@ -10,6 +10,7 @@
 
 1. [Getting Started](#introduction)
 2. [Web Application Architecture](#architecture)
+3. [Challenges](#challenges)
 
 <a name="introduction"></a>
 # Getting Started 
@@ -66,6 +67,7 @@ We pickled our models and encapsulated them in `models.py` and took an Object-Or
 This is the front-end of our application. It is responsible for integrating our modules for analyzing sentiment and passing the data fetched from the Reddit API.
 
 
+<a name="challenges"></a>
 # Challenges
 
 ## Code Optimization
@@ -76,3 +78,4 @@ Fetching posts is limited to 100 posts per call. For each batch of 100 posts, th
 
 ### Text Pre-Processing
 
+TODO: Add what we did to optimize performance on ML Algos
