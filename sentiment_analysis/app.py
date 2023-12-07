@@ -10,9 +10,10 @@ from wordcloud import WordCloud
 import base64
 from nltk.corpus import stopwords
 import nltk
+from nltk.probability import FreqDist
+import numpy as np
 
 nltk.download('stopwords')
-
 warnings.filterwarnings('ignore', module='models')
 
 scraper = RedditScraper()
@@ -22,27 +23,9 @@ df = None
 app = Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
 app.config.suppress_callback_exceptions = True
 
-
-# fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
-
 app.layout = html.Div(children=[
     html.H1(children='Reddit Sentiment Analysis Dashboard', style={"margin": "10px"}),
     html.Div(children='Analyze the Sentiment of your Favorite Subreddit and more!', style={"margin": "10px"}),
-
-    # dcc.Input(
-    #     id='input_subreddit',
-    #     placeholder="Enter a Subreddit here.",
-    #     type='text',
-    #     style={"margin": "10px"}
-    # ),
-    
-    
-    # dcc.Dropdown(
-    #     ['K Nearest Neighbors', 'Decision Tree', 'Random Forest', 'Logistic Regression', 'SGD Classifier', 'Hard Voting Classifier', 'Soft Voting Classifier'],
-    #     'K Nearest Neighbors',
-    #     id='dropdown_sentiment_model_name',
-    #     style= {"margin": "5px", }
-    # ),
     html.Div([
         dcc.Input(
             id='input_subreddit',
@@ -70,7 +53,7 @@ app.layout = html.Div(children=[
     html.Button('Submit', id='submit-val', style={"margin": "10px", "font-size": "15px", "background-color": "gray"}, n_clicks=0),
     
     html.Div(id='sentiment_drop_down_text', style={"margin": "10px"}),
-    html.H2(id='subreddit_header_text', style={"margin": "10px"}, children="Please Select a SubReddit"),
+    html.H3(id='subreddit_header_text', style={"margin": "10px"}, children="Please Select a SubReddit"),
     html.Div([
             dcc.Loading(
             id="loading_spinner",
@@ -85,9 +68,7 @@ app.layout = html.Div(children=[
         style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '20px'}
     ),
     html.Div([
-        html.Img(id="wordcloud_positive"),
-        # html.Img(id="wordcloud_neutral"),
-        # html.Img(id="wordcloud_negative")
+        html.Img(id="wordcloud_positive")
     ],
         style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'}
     ),
@@ -103,12 +84,25 @@ app.layout = html.Div(children=[
         children=[
             html.Div(id="stacked_sentiment_bar_chart_time_graph")
     ],
-    style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'})
+        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'}
+    ),
+    html.Div(
+        id='boxplot_scores_ratio_div',
+        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '15px', 'padding': '15px'}
+    ),
+    html.Div(
+        id='freqdist_positive_bar_chart_div',
+        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '15px', 'padding': '15px'}
+    ),
+    html.Div(
+        id='freqdist_neutral_bar_chart_div',
+        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '15px', 'padding': '15px'}
+    ),
+    html.Div(
+        id='freqdist_negative_bar_chart_div',
+        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '15px', 'padding': '15px'}
+    )
     
-    # dcc.Graph(
-    #     id='example-graph',
-    #     figure=fig
-    # )
 ])
 
 
@@ -142,16 +136,27 @@ def update_dropdown_menus(n_clicks, topic_type, model_name, subreddit_name):
     except:
         return "Subreddit {} was not found!".format(subreddit_name)
     
-    print('-' * 20)
-    print(df.head())
-    print('-' * 20)
-    sentiment_scorer = Sentiment_Scorer(df, model_name)
-    print("Loaded in Model {}!".format(model_name))
-    df = sentiment_scorer.label_dataset()
-    print('-' * 20)
-    print(df.head())
-    print('-' * 20)
-    return 'Performing Analysis on "{}" using {}'.format(subreddit_name, model_name), None
+    try:
+        print('-' * 20)
+        print(df.head())
+        print('-' * 20)
+        
+        sentiment_scorer = Sentiment_Scorer(df, model_name)
+        
+        print("Loaded in Model {}!".format(model_name))
+        
+        df = sentiment_scorer.label_dataset()
+        
+        print('-' * 20)
+        print(df.head())
+        print('-' * 20)
+        
+        df['text'] = df['text'].apply(lambda x: sentiment_scorer.clean_text(x))
+    
+    except Exception as e:
+        print("Error in loading model: {}".format(e))
+        
+    return 'Sentiment Analysis of Subreddit r/{}\'s {} posts using {}'.format(subreddit_name, topic_type, model_name), None
 
 @callback(
     Output('wordcloud_positive', 'src'),
@@ -190,9 +195,16 @@ def add_wordclouds(children):
 )
 def add_sentiment_pie_chart(children):
     print("Time Series Chart Called")
-    return dcc.Graph(figure=px.pie(df['sentiment'].value_counts().reset_index(), values='count', names='sentiment', hole=.3, template='plotly_dark')), \
-        "Composition of Sentiment in this Subreddit by Posts"
-
+    return dcc.Graph(
+        figure=px.pie(
+            df['sentiment'].value_counts().reset_index(),
+            values='count',
+            names='sentiment',
+            hole=.3,
+            template='plotly_dark',
+            title='Composition of Sentiment in this Subreddit by Posts')), \
+        "Quick Overview of this Subreddit\'s Overall Sentiment"
+        
 @callback(
     Output('stacked_sentiment_bar_chart_time_div', 'children'),
     Output('stacked_sentiment_bar_chart_header', 'children'),
@@ -206,11 +218,97 @@ def add_time_series_bar_chart(children):
                       x="date", 
                       y="count", 
                       color="sentiment",
-                      template='plotly_dark'
+                      template='plotly_dark',
+                      title='Posts per Day Broken Down By Sentiment'
                     )
         ), \
         "How has the Sentiment of Posts Changed Over Time?"
 
+@callback(
+    Output('boxplot_scores_ratio_div', 'children'),
+    Input('stacked_sentiment_bar_chart_time_div','children'),
+    prevent_initial_call=True
+)
+def add_boxplots_votes_ratios(children):
+    return dcc.Graph(
+        figure=px.strip(
+            df, 
+            x='sentiment', 
+            y='score',
+            template='plotly_dark',
+            title='Density of Posts - Scores vs Sentiment',
+            width=500,
+            height=400
+        )
+    ), \
+    dcc.Graph(
+        figure=px.strip(
+            df, 
+            x='sentiment', 
+            y='upvote_ratio',
+            template='plotly_dark',
+            title='Density of Posts - Upvote Ratio vs Sentiment',
+            width=500,
+            height=400
+        )
+    )
+
+    # Output('freqdist_neutral_bar_chart_div', 'children'),
+    # Output('freqdist_negative_bar_chart_div', 'children'),
+    
+@callback(
+    Output('freqdist_positive_bar_chart_div', 'children'),
+    Output('freqdist_neutral_bar_chart_div', 'children'),
+    Output('freqdist_negative_bar_chart_div', 'children'),
+    Input('boxplot_scores_ratio_div','children'),
+    prevent_initial_call=True
+)
+def add_freqdist_bar_plots(children):
+    df['tokens'] = df['text'].apply(lambda x: nltk.word_tokenize(x))
+    
+    tokens_positive = df[df['sentiment'] == 'Positive']['tokens'].dropna().reset_index(drop=True)
+    tokens_negative = df[df['sentiment'] == 'Negative']['tokens'].dropna().reset_index(drop=True)
+    tokens_neutral = df[df['sentiment'] == 'Neutral']['tokens'].dropna().reset_index(drop=True)
+    
+    fdist_pos = FreqDist(np.concatenate(tokens_positive))
+    fdist_neg = FreqDist(np.concatenate(tokens_negative))
+    fdist_neu = FreqDist(np.concatenate(tokens_neutral))
+    
+    df_pos_fdist = pd.DataFrame(list(fdist_pos.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
+    df_neg_fdist = pd.DataFrame(list(fdist_neg.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
+    df_neu_fdist = pd.DataFrame(list(fdist_neu.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
+    
+    print(df_pos_fdist.head())
+
+    return dcc.Graph(
+        figure=px.bar(
+            df_pos_fdist,
+            x='Word',
+            y='Count',
+            title='Most Commonly Used Words in Positive Posts',
+            template='plotly_dark'
+        )
+    ), \
+    dcc.Graph(
+        figure=px.bar(
+            df_neu_fdist,
+            x='Word',
+            y='Count',
+            title='Most Commonly Used Words in Neutral Posts',
+            template='plotly_dark'
+        )
+    ), \
+    dcc.Graph(
+        figure=px.bar(
+            df_neg_fdist,
+            x='Word',
+            y='Count',
+            title='Most Commonly Used Words in Negative Posts',
+            template='plotly_dark'
+        )
+    )
+    
+    
 if __name__ == '__main__':
     app.run(debug=True)
     
