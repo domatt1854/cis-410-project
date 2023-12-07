@@ -152,6 +152,7 @@ def update_dropdown_menus(n_clicks, topic_type, model_name, subreddit_name):
         print('-' * 20)
         
         df['text'] = df['text'].apply(lambda x: sentiment_scorer.clean_text(x))
+        df['tokens'] = df['text'].apply(lambda x: nltk.word_tokenize(x))
     
     except Exception as e:
         print("Error in loading model: {}".format(e))
@@ -258,25 +259,16 @@ def add_boxplots_votes_ratios(children):
     
 @callback(
     Output('freqdist_positive_bar_chart_div', 'children'),
-    Output('freqdist_neutral_bar_chart_div', 'children'),
-    Output('freqdist_negative_bar_chart_div', 'children'),
     Input('boxplot_scores_ratio_div','children'),
     prevent_initial_call=True
 )
-def add_freqdist_bar_plots(children):
-    df['tokens'] = df['text'].apply(lambda x: nltk.word_tokenize(x))
+def add_freqdist_bar_plot_pos(children):
     
-    tokens_positive = df[df['sentiment'] == 'Positive']['tokens'].dropna().reset_index(drop=True)
-    tokens_negative = df[df['sentiment'] == 'Negative']['tokens'].dropna().reset_index(drop=True)
-    tokens_neutral = df[df['sentiment'] == 'Neutral']['tokens'].dropna().reset_index(drop=True)
-    
+    tokens_positive = df[df['sentiment'] == 'Positive']['tokens'].dropna().reset_index(drop=True) 
     fdist_pos = FreqDist(np.concatenate(tokens_positive))
-    fdist_neg = FreqDist(np.concatenate(tokens_negative))
-    fdist_neu = FreqDist(np.concatenate(tokens_neutral))
-    
+
     df_pos_fdist = pd.DataFrame(list(fdist_pos.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
-    df_neg_fdist = pd.DataFrame(list(fdist_neg.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
-    df_neu_fdist = pd.DataFrame(list(fdist_neu.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
+
     
     print(df_pos_fdist.head())
 
@@ -288,27 +280,55 @@ def add_freqdist_bar_plots(children):
             title='Most Commonly Used Words in Positive Posts',
             template='plotly_dark'
         )
-    ), \
-    dcc.Graph(
-        figure=px.bar(
-            df_neu_fdist,
-            x='Word',
-            y='Count',
-            title='Most Commonly Used Words in Neutral Posts',
-            template='plotly_dark'
-        )
-    ), \
-    dcc.Graph(
-        figure=px.bar(
-            df_neg_fdist,
-            x='Word',
-            y='Count',
-            title='Most Commonly Used Words in Negative Posts',
-            template='plotly_dark'
-        )
     )
+    
+@callback(
+    Output('freqdist_neutral_bar_chart_div', 'children'),
+    Input('boxplot_scores_ratio_div','children'),
+    prevent_initial_call=True
+)
+def add_freqdist_bar_plot_neu(children):
+    tokens_neutral = df[df['sentiment'] == 'Neutral']['tokens'].dropna().reset_index(drop=True)
+    if tokens_neutral.empty:
+        return None
+    
+    fdist_neu = FreqDist(np.concatenate(tokens_neutral))
+    df_neu_fdist = pd.DataFrame(list(fdist_neu.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
+    return dcc.Graph(
+                figure=px.bar(
+                    df_neu_fdist,
+                    x='Word',
+                    y='Count',
+                    title='Most Commonly Used Words in Neutral Posts',
+                    template='plotly_dark'
+                )
+            )
+    
+
+@callback(
+    Output('freqdist_negative_bar_chart_div', 'children'),
+    Input('boxplot_scores_ratio_div','children'),
+    prevent_initial_call=True
+)
+def add_freqdist_bar_plot_neg(children):
+    tokens_negative = df[df['sentiment'] == 'Negative']['tokens'].dropna().reset_index(drop=True)
+    if tokens_negative.empty:
+        return None
+    
+    fdist_neg = FreqDist(np.concatenate(tokens_negative))
+    df_neg_fdist = pd.DataFrame(list(fdist_neg.items()), columns=['Word', 'Count']).sort_values(by='Count', ascending=False).head(10)
+    
+    return dcc.Graph(
+                figure=px.bar(
+                    df_neg_fdist,
+                    x='Word',
+                    y='Count',
+                    title='Most Commonly Used Words in Negative Posts',
+                    template='plotly_dark'
+                )
+            )
     
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
     
