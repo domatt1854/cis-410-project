@@ -20,6 +20,12 @@ class Sentiment_Scorer:
     def __init__(self, data, model):
         # Remove Nan
         data = data.dropna(subset=['text'])
+        data = data[data['text']!='']
+        # Considering only text with alphabetic characteristics
+        # Assuming this is meaningful text
+        data['count'] = data['text'].apply(lambda x: sum(c.isalpha() for c in x))
+        data = data[data['count']!=0]
+        del data['count']
         self.data = data
         if model == None:
             raise Exception("Model has not been selected")
