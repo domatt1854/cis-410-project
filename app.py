@@ -149,10 +149,15 @@ def update_dropdown_menus(n_clicks, topic_type, model_name, subreddit_name):
         
         print('-' * 20)
         print(df.head())
+        
         print('-' * 20)
         
         df['text'] = df['text'].apply(lambda x: sentiment_scorer.clean_text(x))
         df['tokens'] = df['text'].apply(lambda x: nltk.word_tokenize(x))
+        
+        print('-------------------------------------------- COLUMNS -----------------------------')
+        print(df.columns)
+        print('------------------------------------------------------------------------')
     
     except Exception as e:
         print("Error in loading model: {}".format(e))
@@ -166,8 +171,8 @@ def update_dropdown_menus(n_clicks, topic_type, model_name, subreddit_name):
     prevent_initial_call=True
 )
 def add_wordclouds(children):
+    global df
     print("Entered WordCloud Generation Function")
-    print(df.head())
     try:
         img = BytesIO()
         vocab = df.dropna()['text'].str.replace(r'\?|\.|\'', ' ')
@@ -196,6 +201,9 @@ def add_wordclouds(children):
 )
 def add_sentiment_pie_chart(children):
     print("Time Series Chart Called")
+    global df
+    print(df.columns)
+    print(df.head())
     return dcc.Graph(
         figure=px.pie(
             df['sentiment'].value_counts().reset_index(),
@@ -330,5 +338,5 @@ def add_freqdist_bar_plot_neg(children):
     
     
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
     

@@ -24,27 +24,27 @@ class Sentiment_Scorer:
         if model == None:
             raise Exception("Model has not been selected")
         if model == 'K Nearest Neighbors':
-            self.model = joblib.load('joblib-KNN-Model.pkl')
+            self.model = joblib.load('models/joblib-KNN-Model.pkl')
         elif model == 'Decision Tree':
-            self.model = joblib.load('joblib-DT-Model.pkl')
+            self.model = joblib.load('models/joblib-DT-Model.pkl')
         elif model == 'Random Forest':
-            self.model = joblib.load('joblib-RF-Model.pkl')
+            self.model = joblib.load('models/joblib-RF-Model.pkl')
         elif model == 'Logistic Regression':
-            self.model = joblib.load('joblib-LR-Model.pkl')
+            self.model = joblib.load('models/joblib-LR-Model.pkl')
         elif model == 'SGD Classifier':
-            self.model = joblib.load('joblib-SC-Model.pkl')
+            self.model = joblib.load('models/joblib-SC-Model.pkl')
         elif model == 'Hard Voting Classifier':
-            self.model = joblib.load('joblib-vh-Model.pkl')
+            self.model = joblib.load('models/joblib-vh-Model.pkl')
         elif model == 'Soft Voting Classifier':
-            self.model = joblib.load('joblib-vs-Model.pkl')
+            self.model = joblib.load('models/joblib-vs-Model.pkl')
         else:
             raise Exception("The selected model is not currently supported by our API")
             
-        self.tfidf_vectorizer = joblib.load('tfidf-vector.pkl')
+        self.tfidf_vectorizer = joblib.load('models/tfidf-vector.pkl')
 
-        with open("negative.json", "r") as fp: 
+        with open("sentiment_words/negative.json", "r") as fp: 
             self.positive_words = json.load(fp)
-        with open("positive.json", "r") as fp: 
+        with open("sentiment_words/positive.json", "r") as fp: 
             self.negative_words = json.load(fp)
 
         self.analyzer = SentimentIntensityAnalyzer()
