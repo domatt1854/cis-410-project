@@ -24,8 +24,12 @@ The `USER_AGENT` can be any value you desire.
 
 To install dependencies required to run all notebooks and applications, run the script in your terminal where `requirements.txt` is located.
 
+For Windows Users: 
 ```
-For Windows Users: pip install -r requirements_windows.txt
+pip install -r requirements_windows.txt
+```
+For Mac Users
+```
 For Mac Users: pip install -r requirements_macos.txt
 ```
 
