@@ -1,4 +1,4 @@
-# CIS 410 - Group Project: Reddit Sentiment Analysis DashBoard
+# CIS 410 - Group Project: Reddit Sentiment Analysis Dashboard
 
 **Group Name** - Grade Simps
 
