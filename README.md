@@ -22,7 +22,14 @@ The `USER_AGENT` can be any value you desire.
 
 ### Installing Dependencies
 
-To install dependencies required to run all notebooks and applications, run the script in your terminal where `requirements.txt` is located.
+To install dependencies required to run all notebooks and applications, run the script in your terminal where either `requirements_windows.txt` or `requirements_macos.txt` is located.
+
+#### Highly Recommended to Avoid Potential Issues: Create a virtual environment which satisfies the requirement
+```
+conda create --name cs410-reddit
+conda create -n cs410-reddit python=3.9
+conda activate cs410-reddit          
+```
 
 For Windows Users: 
 ```
