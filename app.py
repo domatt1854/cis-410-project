@@ -231,7 +231,7 @@ def add_time_series_bar_chart(children):
                       title='Posts per Day Broken Down By Sentiment'
                     )
         ), \
-        "How has the Sentiment of Posts Changed Over Time?"
+        "How has the Sentiment of Posts Changed Over Time?\n(PS: You might need to zoom in based off subreddit)"
 
 @callback(
     Output('boxplot_scores_ratio_div', 'children'),
