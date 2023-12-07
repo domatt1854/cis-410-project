@@ -1,3 +1,5 @@
+# TESTING MODULE AS AN EXAMPLE OF WHAT EACH MODEL COULD BE
+
 from nltk.sentiment import SentimentIntensityAnalyzer
 import pandas as pd
 
