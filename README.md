@@ -22,22 +22,10 @@ The `USER_AGENT` can be any value you desire.
 
 ### Installing Dependencies
 
-To install dependencies required to run all notebooks and applications, run the script in your terminal where either `requirements_windows.txt` or `requirements_macos.txt` is located.
+To install dependencies required to run all notebooks and applications, run the script in your terminal where `requirements.txt` is located.
 
-#### Highly Recommended to Avoid Potential Issues: Create a virtual environment which satisfies the requirement
 ```
-conda create --name cs410-reddit
-conda create -n cs410-reddit python=3.9
-conda activate cs410-reddit          
-```
-
-For Windows Users: 
-```
-pip install -r requirements_windows.txt
-```
-For Mac Users:
-```
-pip install -r requirements_macos.txt
+pip install -r requirements.txt
 ```
 
 # Running the Application
@@ -48,7 +36,22 @@ To run the application, run the following command in your terminal
 python app.py
 ```
 
-This will launch your `Dash Plotly` Application.
+This will launch your `Dash Plotly` Application, and can usually be accessed using the following localhost link: http://127.0.0.1:8050/
 
-Then you can access our dashboard using the following localhost link: http://127.0.0.1:8050/
+# Web Application Architecture
 
+![Web Application Architecture](images/web_application_diagram.png)
+
+## Components
+
+### Python Reddit API Wrapper(PRAW)
+
+The Python Reddit API Wrapper allows our application to fetch posts from a specified subreddit. We then run some functions that clean the text data.
+
+### Scikit-Learn NLTK
+
+We pickled our models and encapsulated them in `models.py` and took an Object-Oriented approach to allow for easy use in our web application. These components are responsible for classifying and pre-processing text data.
+
+### Dash Plotly
+
+This is the front-end of our application. It is responsible for integrating our modules for analyzing sentiment and passing the data fetched from the Reddit API.
