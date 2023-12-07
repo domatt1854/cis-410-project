@@ -20,6 +20,7 @@ sentiment_scorer = None
 df = None
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+app.config.suppress_callback_exceptions = True
 
 
 # fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
@@ -79,9 +80,9 @@ app.layout = html.Div(children=[
         style= {'margin': '50px'}
     ),
     html.Div([
-        html.H4(id='wordcloud_header', style={"margin": "10px"})
+        html.H4(id='wordcloud_header')
     ],
-        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'}
+        style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '20px'}
     ),
     html.Div([
         html.Img(id="wordcloud_positive"),
@@ -89,7 +90,20 @@ app.layout = html.Div(children=[
         # html.Img(id="wordcloud_negative")
     ],
         style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'}
-    )
+    ),
+    html.H4(id='sentiment_pie_chart_header', style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '20px'}),
+    html.Div(id='sentiment_pie_chart_div',
+        children=[
+            html.Div(id="sentiment_pie_chart_graph")
+    ],
+    style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'}),
+    
+    html.H4(id='stacked_sentiment_bar_chart_header', style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center', 'margin': '20px'}),
+    html.Div(id='stacked_sentiment_bar_chart_time_div',
+        children=[
+            html.Div(id="stacked_sentiment_bar_chart_time_graph")
+    ],
+    style={'width': '100%', 'display': 'flex', 'align-items':'center', 'justify-content':'center'})
     
     # dcc.Graph(
     #     id='example-graph',
@@ -166,6 +180,36 @@ def add_wordclouds(children):
         print(e)
     
     return 'data:image/png;base64,{}'.format(base64.b64encode(img.getvalue()).decode()), "Most Commonly-Used Words In This Subreddit"
+
+
+@callback(
+    Output('sentiment_pie_chart_div', 'children'),
+    Output('sentiment_pie_chart_header', 'children'),
+    Input('wordcloud_header','children'),
+    prevent_initial_call=True
+)
+def add_sentiment_pie_chart(children):
+    print("Time Series Chart Called")
+    return dcc.Graph(figure=px.pie(df['sentiment'].value_counts().reset_index(), values='count', names='sentiment', hole=.3, template='plotly_dark')), \
+        "Composition of Sentiment in this Subreddit by Posts"
+
+@callback(
+    Output('stacked_sentiment_bar_chart_time_div', 'children'),
+    Output('stacked_sentiment_bar_chart_header', 'children'),
+    Input('sentiment_pie_chart_div','children'),
+    prevent_initial_call=True
+)
+def add_time_series_bar_chart(children):
+    print("Time Series Chart Called")
+    return dcc.Graph(
+        figure=px.bar(df.groupby('date')['sentiment'].value_counts().reset_index(), 
+                      x="date", 
+                      y="count", 
+                      color="sentiment",
+                      template='plotly_dark'
+                    )
+        ), \
+        "How has the Sentiment of Posts Changed Over Time?"
 
 if __name__ == '__main__':
     app.run(debug=True)
