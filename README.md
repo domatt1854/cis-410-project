@@ -15,7 +15,7 @@
 <a name="introduction"></a>
 # Getting Started 
 
-Welcome to our CIS 410 Group project! Over the last few months, we have worked diligently on finding a solution to provide users with useful metrics and visualizations of their favorite subreddit. Follow the steps below to run the application locally on your computer.
+Welcome to our CIS 410 Group project! Over the last few months, we have worked diligently on building an application to provide users with useful metrics and visualizations of their favorite subreddit. Follow the steps below to run the application locally on your computer.
 
 ## Signing up for Credentials to Authenticate to Reddit API
 
