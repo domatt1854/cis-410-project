@@ -138,10 +138,10 @@ class Sentiment_Scorer:
         
         
 def calculate_sentiment(sentiment_score):
-    if sentiment_score >= 1:
+    if sentiment_score == 1:
         return "Positive"
     elif sentiment_score == 0:
-        return "Negative"
-    else:
         return "Neutral"
+    elif sentiment_score == -1:
+        return "Negative"
     
