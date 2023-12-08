@@ -18,17 +18,29 @@
 Welcome to our CIS 410 Group project! Over the last few months, we have worked diligently on building an application to provide users with useful metrics and visualizations of their favorite subreddit. Follow the steps below to run the application locally on your computer.
 
 ## Signing up for Credentials to Authenticate to Reddit API
-[Step By Step Instructions](reddit_setup.md)
 
-Our dashboard requires access to the Reddit API. 
+Our dashboard requires access to the Reddit API. Before you can run this program, you must create a `Reddit Application`
 
-Before you can run this program, you must create a `Reddit Application` using this link [here](https://www.reddit.com/prefs/apps).
+1. Click on this link to begin: [Reddit Application Creation](https://www.reddit.com/prefs/apps)
+2. Login in to your Reddit account, if not already logged in
+3. Select `are you a developer? create an app...`
+4. You will be prompted to fill in a couple of fields, which will be discussed in the next steps
 
-After creating your application, navigate to the `secret.py` module and substitute in the values for `CLIENT_SECRET` and `CLIENT_ID`.
+![Create Application Page](images/create_application_page.png)
+
+5. Fill in the field for `name` (can be anything)
+6. Select `web app`
+7. Fill in the field for `description` (can be anything) 
+8. Fill in the fields for `about url` and `redirect url` (can be anything). If any error occurs, ensure 'https://' is at the beginning of your link.
+9. Select `Create App`
+10. You will see the following page
 
 ![Reddit Developer Application](images/reddit_developer_application.png)
 
-The `USER_AGENT` can be any value you desire.
+11. Based on the above image, save your `CLIENT_ID` and `CLIENT_SECRET`
+12. Navigate to the `secret.py` module
+13. Substitute in the respective values for `CLIENT_ID`and `CLIENT_SECRET`. The value for `USER_AGENT` can be any value you desire
+14. Save secret.py
 
 
 ## Installing Dependencies
