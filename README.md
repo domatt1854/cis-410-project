@@ -18,6 +18,7 @@
 Welcome to our CIS 410 Group project! Over the last few months, we have worked diligently on building an application to provide users with useful metrics and visualizations of their favorite subreddit. Follow the steps below to run the application locally on your computer.
 
 ## Signing up for Credentials to Authenticate to Reddit API
+[Step By Step Instructions](reddit_setup.md)
 
 Our dashboard requires access to the Reddit API. 
 
@@ -28,6 +29,7 @@ After creating your application, navigate to the `secret.py` module and substitu
 ![Reddit Developer Application](images/reddit_developer_application.png)
 
 The `USER_AGENT` can be any value you desire.
+
 
 ## Installing Dependencies
 
