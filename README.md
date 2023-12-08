@@ -20,6 +20,7 @@
 This video shows how you can start and use the application after following the steps in [Getting Started](#introduction)
 
 [Demo Video](https://www.youtube.com/watch?v=WC6KCAfnC2Q)
+[![Demo Video](images/demo_png.png)](https://www.youtube.com/watch?v=WC6KCAfnC2Q)
 
 <a name="introduction"></a>
 # Getting Started 
