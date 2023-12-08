@@ -8,9 +8,18 @@
 
 # Table of Contents
 
-1. [Getting Started](#introduction)
-2. [Web Application Architecture](#architecture)
-3. [Challenges](#challenges)
+1. [Demo](#demo)
+2. [Getting Started](#introduction)
+3. [Web Application Architecture](#architecture)
+4. [Challenges](#challenges)
+
+
+<a name="demo"></a>
+# Demo
+
+This video shows how you can start and use the application after following the steps in [Getting Started](#introduction)
+
+[Demo Video](https://www.youtube.com/watch?v=WC6KCAfnC2Q)
 
 <a name="introduction"></a>
 # Getting Started 
