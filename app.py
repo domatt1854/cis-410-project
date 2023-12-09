@@ -23,6 +23,7 @@ df = None
 app = Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
 app.config.suppress_callback_exceptions = True
 
+#This section sets up the html section of the webpage
 app.layout = html.Div(children=[
     html.H1(children='Reddit Sentiment Analysis Dashboard', style={"margin": "10px"}),
     html.Div(children='Analyze the Sentiment of your Favorite Subreddit and more!', style={"margin": "10px"}),
