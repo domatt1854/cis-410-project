@@ -102,4 +102,22 @@ Fetching posts is limited to 100 posts per call. For each batch of 100 posts, th
 
 ### Text Pre-Processing
 
-TODO: Add what we did to optimize performance on ML Algos
+We fetched created_utc, title, text, author, score, upvote_ratio, num_comments, and URL for each post. To facilitate sentiment analysis, we first conduct text cleaning, including
+1) filtering out empty text (or text without any alphabetic values)
+2) eliminating the punctuation, URL, and special characters
+3) removing stopwords
+4) and performing lemmatization
+
+### Feature Engineering
+
+We explored 4 types of features
+1) verbosity of text
+2) Vader polarity scores: https://blog.quantinsti.com/vader-sentiment/
+3) positive and negative word frequency: https://publications.aaahq.org/accounting-horizons/article-abstract/31/4/13/2320/Does-an-Analyst-s-Access-to-Information-Vary-with?redirectedFrom=fulltext 
+4) TFIDF vector
+
+Due to the computation limit, we only utilized the TFIDF vectors for the top 10 words. Oh the other hand, to boost the application computation efficiency, we pre-trained the TFIDF model and saved the result.
+
+### Sentiment Analysis
+
+Unsupervised
