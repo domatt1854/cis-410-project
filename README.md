@@ -116,8 +116,17 @@ We explored 4 types of features
 3) positive and negative word frequency: https://publications.aaahq.org/accounting-horizons/article-abstract/31/4/13/2320/Does-an-Analyst-s-Access-to-Information-Vary-with?redirectedFrom=fulltext 
 4) TFIDF vector
 
-Due to the computation limit, we only utilized the TFIDF vectors for the top 10 words. Oh the other hand, to boost the application computation efficiency, we pre-trained the TFIDF model and saved the result.
+Due to the computation limit, we only utilized the TFIDF vectors for the top 10 words. On the other hand, to boost the application computation efficiency, we pre-trained the TFIDF model and saved the result.
 
 ### Sentiment Analysis
 
-Unsupervised
+The fundamental goal of our project is to predict if a Reddit post is positive, negative, or neutral given its text. However, the challenge is that there is no such label for Reddit posts. To solve this problem, we found a labeled Reddit dataset on Kaggle (https://www.kaggle.com/datasets/cosmos98/twitter-and-reddit-sentimental-analysis-dataset) and trained our machine-learning model on this dataset. We then can utilize this pre-trained model to predict the sentiment score of our collected data on any Reddit community we are interested in. 
+
+To give a prompt response (as opposed to the deep neural networks take longer to train and predict), we only applied several traditional machine learning models and performed hyperparameter tunning, models including
+1) K Nearest Neighbors
+2) Logistic Regression
+3) Decision Tree
+4) Random Forest
+5) SGD Classifier
+6) Hard Voting Classifier: https://ilyasbinsalih.medium.com/what-is-hard-and-soft-voting-in-machine-learning-2652676b6a32#:
+7) Soft Voting Classifier
